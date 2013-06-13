@@ -1,7 +1,0 @@
-cmake_minimum_required(VERSION 2.8 C++)
-
-project(hnefatafl)
-
-add_definitions(-std=c11)
-
-add_executable(hnefatafl Application.cpp)
