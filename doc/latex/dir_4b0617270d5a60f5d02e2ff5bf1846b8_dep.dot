@@ -1,0 +1,13 @@
+digraph "D:/git ws/Hnefatafl" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e6ba80e5cbaa147bc2a689d8698523e9 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="git ws" fontname="Helvetica", fontsize="10", URL="dir_e6ba80e5cbaa147bc2a689d8698523e9.html"]
+  subgraph clusterdir_4b0617270d5a60f5d02e2ff5bf1846b8 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_4b0617270d5a60f5d02e2ff5bf1846b8.html"];
+    dir_4b0617270d5a60f5d02e2ff5bf1846b8 [shape=plaintext label="Hnefatafl"];
+    dir_7fb73512fc1e5c5d833786520e9b937e [shape=box label="Hnefatafl" color="black" fillcolor="white" style="filled" URL="dir_7fb73512fc1e5c5d833786520e9b937e.html"];
+  }
+  }
+}

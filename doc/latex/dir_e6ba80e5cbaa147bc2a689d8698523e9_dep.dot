@@ -1,0 +1,10 @@
+digraph "D:/git ws" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_e6ba80e5cbaa147bc2a689d8698523e9 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_e6ba80e5cbaa147bc2a689d8698523e9.html"];
+    dir_e6ba80e5cbaa147bc2a689d8698523e9 [shape=plaintext label="git ws"];
+    dir_4b0617270d5a60f5d02e2ff5bf1846b8 [shape=box label="Hnefatafl" color="red" fillcolor="white" style="filled" URL="dir_4b0617270d5a60f5d02e2ff5bf1846b8.html"];
+  }
+}

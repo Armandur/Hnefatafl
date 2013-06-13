@@ -1,7 +1,7 @@
 #include <string>
 #include <sstream>
 
-#include "Piece.h"
+#include "Piece.hpp"
 
 Piece::Piece()
 {
