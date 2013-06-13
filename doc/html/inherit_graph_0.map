@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard." alt="" coords="5,5,96,32"/>
+<area shape="rect" id="node3" href="$class_piece.html" title="Describes a piece on the gameboard." alt="" coords="145,5,199,32"/>
+<area shape="rect" id="node5" href="$class_tile.html" title="Describes a tile on the gameboard." alt="" coords="151,56,193,83"/>
+<area shape="rect" id="node6" href="$class_printable.html" title="Abstract class implementing std::string toString() functionality." alt="" coords="14,56,87,83"/>
+</map>

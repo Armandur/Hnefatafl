@@ -1,29 +1,86 @@
+/*!
+ * \file Piece.hpp
+ *
+ * \author Rasmus Pettersson Vik
+ * \date juni 2013
+ *
+ * Declaration of Piece class
+ */
 #ifndef PIECE_H
 #define PIECE_H
 
 #include <SFML/System.hpp>
+#include "BoardEntity.hpp"
+#include "Printable.hpp"
 
-class Piece
+/*!
+ * \class Piece
+ *
+ * \brief Describes a piece on the gameboard
+ *
+ * \author Rasmus Pettersson Vik
+ * \date juni 2013
+ */
+class Piece : protected BoardEntity, protected Printable
 {
 	public:
-		enum Type {BLACK, WHITE, KING};
+		//! Different types of Pieces
+		enum Type{BLACK, WHITE, KING};
 
-		Piece();
-		Piece(const Piece& org);
-		Piece(const sf::Vector2<int> pos, Piece::Type type = Type::BLACK);
-		~Piece();
+		/*!
+		 * \brief Default Piece Constructor
+		 * Initialises tile object with Piece::Type::Black and position -1, -1
+		 */
+		Piece(void);
 
-		Piece::Type type() const;
-		void type(const Piece::Type&);
+		/*!
+		 * \brief Piece copy constructor
+		 * \param[in] src Source to copy from
+		 */
+		Piece(const Piece& src);
 
-		sf::Vector2<int> position() const;
-		void position(const sf::Vector2<int> pos);
+		/*!
+		 * \brief Piece constructor with position and type
+		 *
+		 * Initialises tile object with the position pos and default
+		 * type of Piece::Type::BLACK.
+		 *
+		 * \param[in] pos The position to set the piece to.
+		 * \param[in] type The type to set the piece to. Default is Piece::Type::BLACK.
+		 */
+		Piece(const sf::Vector2<int>& pos,
+			 const Piece::Type& type = Piece::Type::BLACK);
 
-		std::string toString() const;
+		//! Piece destructor
+		~Piece(void);
 
+		/*!
+		 * \brief Sets the type of the piece
+		 * \param[in] type The type of the piece
+		 */
+		void type(const Piece::Type& type);
+
+		/*!
+		 * \brief Gets the type of the piece
+		 * \return Returns the type of the piece
+		 */
+		const Piece::Type& type() const;
+
+		/*!
+		 * \brief Gets information about the current piece
+		 * \return Returns the type and position of the piece in a human
+		 * readable format.
+		 */
+		std::string toString();
+	
 	private:
+		/*! Initialising function
+		 * \note Should be run in every constructor!
+		 */
+		void _init();
+
+		//! Stores the current Piece::Type.
 		Piece::Type _type;
-		sf::Vector2<int> _position;
 };
 
 #endif

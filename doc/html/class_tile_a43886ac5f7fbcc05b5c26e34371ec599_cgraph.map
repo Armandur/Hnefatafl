@@ -1,0 +1,4 @@
+<map id="Tile::Tile" name="Tile::Tile">
+<area shape="rect" id="node3" href="$class_board_entity.html#aef7592bf7ad04fb47402cbbea5fac723" title="Gets the position of the BoardEntity." alt="" coords="126,5,269,32"/>
+<area shape="rect" id="node5" href="$class_tile.html#a816fb8e2d8d48619eccf6e225eca7206" title="Get the type of the tile." alt="" coords="160,56,235,83"/>
+</map>

@@ -1,0 +1,223 @@
+\hypertarget{class_tile}{\section{Tile Class Reference}
+\label{class_tile}\index{Tile@{Tile}}
+}
+
+
+Describes a tile on the gameboard.  
+
+
+
+
+{\ttfamily \#include $<$Tile.\-hpp$>$}
+
+
+
+Inheritance diagram for Tile\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_tile__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tile\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_tile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_tile_afa5ef05a7f2ea1f3e44398c001abc738}{Type} \{ {\bfseries E\-M\-P\-T\-Y}, 
+{\bfseries C\-O\-R\-N\-E\-R}, 
+{\bfseries T\-H\-R\-O\-N\-E}
+ \}
+\begin{DoxyCompactList}\small\item\em Different types of Tiles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tile_a93fdcc8c693044a3bb3590bdb6daed2a}{\hyperlink{class_tile_a93fdcc8c693044a3bb3590bdb6daed2a}{Tile} (void)}\label{class_tile_a93fdcc8c693044a3bb3590bdb6daed2a}
+
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{class_tile}{Tile} Constructor Initialises tile object with Tile\-::\-Type\-::\-E\-M\-P\-T\-Y and position -\/1, -\/1. \end{DoxyCompactList}\item 
+\hyperlink{class_tile_a43886ac5f7fbcc05b5c26e34371ec599}{Tile} (const \hyperlink{class_tile}{Tile} \&src)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_tile}{Tile} copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_tile_ab7a5adaebb9e705923681daf52f1db74}{Tile} (const sf\-::\-Vector2$<$ int $>$ \&pos, const \hyperlink{class_tile_afa5ef05a7f2ea1f3e44398c001abc738}{Tile\-::\-Type} \&\hyperlink{class_tile_af6644c418cbb05f4af1bb0bae756a96f}{type}=Tile\-::\-Type\-::\-E\-M\-P\-T\-Y)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_tile}{Tile} constructor with position and type. \end{DoxyCompactList}\item 
+\hypertarget{class_tile_a98634abbd93fa13d0578d7103202d03d}{\hyperlink{class_tile_a98634abbd93fa13d0578d7103202d03d}{$\sim$\-Tile} ()}\label{class_tile_a98634abbd93fa13d0578d7103202d03d}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_tile}{Tile} Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_tile_af6644c418cbb05f4af1bb0bae756a96f}{type} (const \hyperlink{class_tile_afa5ef05a7f2ea1f3e44398c001abc738}{Tile\-::\-Type} \&type)
+\begin{DoxyCompactList}\small\item\em Set the type of the tile. \end{DoxyCompactList}\item 
+const \hyperlink{class_tile_afa5ef05a7f2ea1f3e44398c001abc738}{Tile\-::\-Type} \& \hyperlink{class_tile_a816fb8e2d8d48619eccf6e225eca7206}{type} () const 
+\begin{DoxyCompactList}\small\item\em Get the type of the tile. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_tile_acc5f775cb013360f669f5043cbf60cb2}{to\-String} ()
+\begin{DoxyCompactList}\small\item\em Gets information about the current tile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Describes a tile on the gameboard. 
+
+\begin{DoxyAuthor}{Author}
+Rasmus Pettersson Vik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+juni 2013 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_tile_a43886ac5f7fbcc05b5c26e34371ec599}{\index{Tile@{Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Tile@{Tile}}
+\subsubsection[{Tile}]{\setlength{\rightskip}{0pt plus 5cm}Tile\-::\-Tile (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tile} \&}]{src}
+\end{DoxyParamCaption}
+)}}\label{class_tile_a43886ac5f7fbcc05b5c26e34371ec599}
+
+
+\hyperlink{class_tile}{Tile} copy constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em src} & Source to copy from \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_tile_a43886ac5f7fbcc05b5c26e34371ec599_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tile_ab7a5adaebb9e705923681daf52f1db74}{\index{Tile@{Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Tile@{Tile}}
+\subsubsection[{Tile}]{\setlength{\rightskip}{0pt plus 5cm}Tile\-::\-Tile (
+\begin{DoxyParamCaption}
+\item[{const sf\-::\-Vector2$<$ int $>$ \&}]{pos, }
+\item[{const {\bf Tile\-::\-Type} \&}]{type = {\ttfamily Tile\-:\-:Type\-:\-:EMPTY}}
+\end{DoxyParamCaption}
+)}}\label{class_tile_ab7a5adaebb9e705923681daf52f1db74}
+
+
+\hyperlink{class_tile}{Tile} constructor with position and type. 
+
+Initialises tile object with the position pos and default type of Tile\-::\-Type\-::\-E\-M\-P\-T\-Y.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & The position to set the tile to. \\
+\hline
+\mbox{\tt in}  & {\em type} & The type to set the tile to. Default is Tile\-::\-Type\-::\-E\-M\-P\-T\-Y. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_tile_ab7a5adaebb9e705923681daf52f1db74_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tile_acc5f775cb013360f669f5043cbf60cb2}{\index{Tile@{Tile}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Tile@{Tile}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Tile\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tile_acc5f775cb013360f669f5043cbf60cb2}
+
+
+Gets information about the current tile. 
+
+\begin{DoxyReturn}{Returns}
+Returns the type and position of the tile in a human readable format. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_printable_a489f74384330f76d048d1ccf5c541571}{Printable}.
+
+\hypertarget{class_tile_af6644c418cbb05f4af1bb0bae756a96f}{\index{Tile@{Tile}!type@{type}}
+\index{type@{type}!Tile@{Tile}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}void Tile\-::type (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tile\-::\-Type} \&}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_tile_af6644c418cbb05f4af1bb0bae756a96f}
+
+
+Set the type of the tile. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em type} & The \hyperlink{class_tile_afa5ef05a7f2ea1f3e44398c001abc738}{Tile\-::\-Type} to set. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_tile_af6644c418cbb05f4af1bb0bae756a96f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_tile_af6644c418cbb05f4af1bb0bae756a96f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tile_a816fb8e2d8d48619eccf6e225eca7206}{\index{Tile@{Tile}!type@{type}}
+\index{type@{type}!Tile@{Tile}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Tile\-::\-Type} \& Tile\-::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_tile_a816fb8e2d8d48619eccf6e225eca7206}
+
+
+Get the type of the tile. 
+
+\begin{DoxyReturn}{Returns}
+Returns the type of the tile. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_tile_a816fb8e2d8d48619eccf6e225eca7206_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+D\-:/git ws/\-Hnefatafl/\-Hnefatafl/\hyperlink{_tile_8hpp}{Tile.\-hpp}\item 
+D\-:/git ws/\-Hnefatafl/\-Hnefatafl/\hyperlink{_tile_8cpp}{Tile.\-cpp}\end{DoxyCompactItemize}

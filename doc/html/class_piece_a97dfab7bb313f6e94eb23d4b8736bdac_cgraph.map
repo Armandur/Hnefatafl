@@ -1,0 +1,4 @@
+<map id="Piece::Piece" name="Piece::Piece">
+<area shape="rect" id="node3" href="$class_board_entity.html#aef7592bf7ad04fb47402cbbea5fac723" title="Gets the position of the BoardEntity." alt="" coords="150,5,293,32"/>
+<area shape="rect" id="node5" href="$class_piece.html#a64d970cf7c3d34014d8a36cc3bd3c908" title="Gets the type of the piece." alt="" coords="177,56,265,83"/>
+</map>

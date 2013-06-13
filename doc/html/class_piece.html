@@ -62,6 +62,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,47 +90,268 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Piece Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Describes a piece on the gameboard.  
+ <a href="class_piece.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_piece_8hpp_source.html">Piece.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Piece:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_piece__inherit__graph.png" border="0" usemap="#_piece_inherit__map" alt="Inheritance graph"/></div>
+<map name="_piece_inherit__map" id="_piece_inherit__map">
+<area shape="rect" id="node2" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard." alt="" coords="5,5,96,32"/><area shape="rect" id="node4" href="class_printable.html" title="Abstract class implementing std::string toString() functionality." alt="" coords="121,5,193,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for Piece:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_piece__coll__graph.png" border="0" usemap="#_piece_coll__map" alt="Collaboration graph"/></div>
+<map name="_piece_coll__map" id="_piece_coll__map">
+<area shape="rect" id="node2" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard." alt="" coords="5,5,96,32"/><area shape="rect" id="node4" href="class_printable.html" title="Abstract class implementing std::string toString() functionality." alt="" coords="121,5,193,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abcd044975b3657962abfd2ded9194b09"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>BLACK</b>, 
+<tr class="memitem:abcd044975b3657962abfd2ded9194b09"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece.html#abcd044975b3657962abfd2ded9194b09">Type</a> { <b>BLACK</b>, 
 <b>WHITE</b>, 
 <b>KING</b>
  }</td></tr>
+<tr class="memdesc:abcd044975b3657962abfd2ded9194b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Different types of Pieces. <br/></td></tr>
 <tr class="separator:abcd044975b3657962abfd2ded9194b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ade398b866a6f8eca384313ef38adb2b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade398b866a6f8eca384313ef38adb2b4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Piece</b> (const <a class="el" href="class_piece.html">Piece</a> &amp;org)</td></tr>
-<tr class="separator:ade398b866a6f8eca384313ef38adb2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7814f9f5f8ed57196c3baeca6fbada7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7814f9f5f8ed57196c3baeca6fbada7c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Piece</b> (const sf::Vector2&lt; int &gt; pos, Piece::Type type=Type::BLACK)</td></tr>
-<tr class="separator:a7814f9f5f8ed57196c3baeca6fbada7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4888185e8742c81931da148fa3ff36bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4888185e8742c81931da148fa3ff36bd"></a>
-Piece::Type&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const </td></tr>
-<tr class="separator:a4888185e8742c81931da148fa3ff36bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3475e61645287242c66949104a2784"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe3475e61645287242c66949104a2784"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> (const Piece::Type &amp;)</td></tr>
-<tr class="separator:afe3475e61645287242c66949104a2784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22dd5bed371836d889fc9b92b1626c82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22dd5bed371836d889fc9b92b1626c82"></a>
-sf::Vector2&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> () const </td></tr>
-<tr class="separator:a22dd5bed371836d889fc9b92b1626c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33a7b407dfb40bdad6a5a4bd5be39b78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33a7b407dfb40bdad6a5a4bd5be39b78"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>position</b> (const sf::Vector2&lt; int &gt; pos)</td></tr>
-<tr class="separator:a33a7b407dfb40bdad6a5a4bd5be39b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87319cd2ae0dbf73398876d89fba3101"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87319cd2ae0dbf73398876d89fba3101"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>toString</b> () const </td></tr>
-<tr class="separator:a87319cd2ae0dbf73398876d89fba3101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64870ec3fe38b7f88c802d91db861abb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64870ec3fe38b7f88c802d91db861abb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece.html#a64870ec3fe38b7f88c802d91db861abb">Piece</a> (void)</td></tr>
+<tr class="memdesc:a64870ec3fe38b7f88c802d91db861abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default <a class="el" href="class_piece.html" title="Describes a piece on the gameboard.">Piece</a> Constructor Initialises tile object with Piece::Type::Black and position -1, -1. <br/></td></tr>
+<tr class="separator:a64870ec3fe38b7f88c802d91db861abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97dfab7bb313f6e94eb23d4b8736bdac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece.html#a97dfab7bb313f6e94eb23d4b8736bdac">Piece</a> (const <a class="el" href="class_piece.html">Piece</a> &amp;src)</td></tr>
+<tr class="memdesc:a97dfab7bb313f6e94eb23d4b8736bdac"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_piece.html" title="Describes a piece on the gameboard.">Piece</a> copy constructor.  <a href="#a97dfab7bb313f6e94eb23d4b8736bdac"></a><br/></td></tr>
+<tr class="separator:a97dfab7bb313f6e94eb23d4b8736bdac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0602222d442db964778b25d3e7b930cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece.html#a0602222d442db964778b25d3e7b930cc">Piece</a> (const sf::Vector2&lt; int &gt; &amp;pos, const <a class="el" href="class_piece.html#abcd044975b3657962abfd2ded9194b09">Piece::Type</a> &amp;<a class="el" href="class_piece.html#ad41386c09d8ca34799398a2c11036cce">type</a>=Piece::Type::BLACK)</td></tr>
+<tr class="memdesc:a0602222d442db964778b25d3e7b930cc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_piece.html" title="Describes a piece on the gameboard.">Piece</a> constructor with position and type.  <a href="#a0602222d442db964778b25d3e7b930cc"></a><br/></td></tr>
+<tr class="separator:a0602222d442db964778b25d3e7b930cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28316e726ffa96f258a79ea90e41d16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad28316e726ffa96f258a79ea90e41d16"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece.html#ad28316e726ffa96f258a79ea90e41d16">~Piece</a> (void)</td></tr>
+<tr class="memdesc:ad28316e726ffa96f258a79ea90e41d16"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_piece.html" title="Describes a piece on the gameboard.">Piece</a> destructor. <br/></td></tr>
+<tr class="separator:ad28316e726ffa96f258a79ea90e41d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41386c09d8ca34799398a2c11036cce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece.html#ad41386c09d8ca34799398a2c11036cce">type</a> (const <a class="el" href="class_piece.html#abcd044975b3657962abfd2ded9194b09">Piece::Type</a> &amp;type)</td></tr>
+<tr class="memdesc:ad41386c09d8ca34799398a2c11036cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the type of the piece.  <a href="#ad41386c09d8ca34799398a2c11036cce"></a><br/></td></tr>
+<tr class="separator:ad41386c09d8ca34799398a2c11036cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d970cf7c3d34014d8a36cc3bd3c908"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_piece.html#abcd044975b3657962abfd2ded9194b09">Piece::Type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece.html#a64d970cf7c3d34014d8a36cc3bd3c908">type</a> () const </td></tr>
+<tr class="memdesc:a64d970cf7c3d34014d8a36cc3bd3c908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of the piece.  <a href="#a64d970cf7c3d34014d8a36cc3bd3c908"></a><br/></td></tr>
+<tr class="separator:a64d970cf7c3d34014d8a36cc3bd3c908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18523c400cb72a50bb1293d27cd1432"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_piece.html#ae18523c400cb72a50bb1293d27cd1432">toString</a> ()</td></tr>
+<tr class="memdesc:ae18523c400cb72a50bb1293d27cd1432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets information about the current piece.  <a href="#ae18523c400cb72a50bb1293d27cd1432"></a><br/></td></tr>
+<tr class="separator:ae18523c400cb72a50bb1293d27cd1432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_class_board_entity"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_board_entity')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_board_entity.html">BoardEntity</a></td></tr>
+<tr class="memitem:a809e46488b5db0ca8940176296548d4c inherit pub_methods_class_board_entity"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a809e46488b5db0ca8940176296548d4c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board_entity.html#a809e46488b5db0ca8940176296548d4c">BoardEntity</a> (void)</td></tr>
+<tr class="memdesc:a809e46488b5db0ca8940176296548d4c inherit pub_methods_class_board_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default <a class="el" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard.">BoardEntity</a> Constructor Runs <a class="el" href="class_board_entity.html#abb7251fa8167ce5618076a79427c8521">_init()</a> and initialises _position to (-1, -1) <br/></td></tr>
+<tr class="separator:a809e46488b5db0ca8940176296548d4c inherit pub_methods_class_board_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5856127ebd5b45c32e745cca13b0775d inherit pub_methods_class_board_entity"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5856127ebd5b45c32e745cca13b0775d"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board_entity.html#a5856127ebd5b45c32e745cca13b0775d">~BoardEntity</a> (void)</td></tr>
+<tr class="memdesc:a5856127ebd5b45c32e745cca13b0775d inherit pub_methods_class_board_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual <a class="el" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard.">BoardEntity</a> destructor. <br/></td></tr>
+<tr class="separator:a5856127ebd5b45c32e745cca13b0775d inherit pub_methods_class_board_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177b0ebff2150101415eb70b4fc677cb inherit pub_methods_class_board_entity"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board_entity.html#a177b0ebff2150101415eb70b4fc677cb">position</a> (const sf::Vector2&lt; int &gt; &amp;pos)</td></tr>
+<tr class="memdesc:a177b0ebff2150101415eb70b4fc677cb inherit pub_methods_class_board_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the position of the <a class="el" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard.">BoardEntity</a>.  <a href="#a177b0ebff2150101415eb70b4fc677cb"></a><br/></td></tr>
+<tr class="separator:a177b0ebff2150101415eb70b4fc677cb inherit pub_methods_class_board_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7592bf7ad04fb47402cbbea5fac723 inherit pub_methods_class_board_entity"><td class="memItemLeft" align="right" valign="top">const sf::Vector2&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board_entity.html#aef7592bf7ad04fb47402cbbea5fac723">position</a> () const </td></tr>
+<tr class="memdesc:aef7592bf7ad04fb47402cbbea5fac723 inherit pub_methods_class_board_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position of the <a class="el" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard.">BoardEntity</a>.  <a href="#aef7592bf7ad04fb47402cbbea5fac723"></a><br/></td></tr>
+<tr class="separator:aef7592bf7ad04fb47402cbbea5fac723 inherit pub_methods_class_board_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Describes a piece on the gameboard. </p>
+<dl class="section author"><dt>Author</dt><dd>Rasmus Pettersson Vik </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>juni 2013 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a97dfab7bb313f6e94eb23d4b8736bdac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Piece::Piece </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_piece.html">Piece</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_piece.html" title="Describes a piece on the gameboard.">Piece</a> copy constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Source to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_piece_a97dfab7bb313f6e94eb23d4b8736bdac_cgraph.png" border="0" usemap="#class_piece_a97dfab7bb313f6e94eb23d4b8736bdac_cgraph" alt=""/></div>
+<map name="class_piece_a97dfab7bb313f6e94eb23d4b8736bdac_cgraph" id="class_piece_a97dfab7bb313f6e94eb23d4b8736bdac_cgraph">
+<area shape="rect" id="node3" href="class_board_entity.html#aef7592bf7ad04fb47402cbbea5fac723" title="Gets the position of the BoardEntity." alt="" coords="150,5,293,32"/><area shape="rect" id="node5" href="class_piece.html#a64d970cf7c3d34014d8a36cc3bd3c908" title="Gets the type of the piece." alt="" coords="177,56,265,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0602222d442db964778b25d3e7b930cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Piece::Piece </td>
+          <td>(</td>
+          <td class="paramtype">const sf::Vector2&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_piece.html#abcd044975b3657962abfd2ded9194b09">Piece::Type</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em> = <code>Piece::Type::BLACK</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_piece.html" title="Describes a piece on the gameboard.">Piece</a> constructor with position and type. </p>
+<p>Initialises tile object with the position pos and default type of Piece::Type::BLACK.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>The position to set the piece to. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The type to set the piece to. Default is Piece::Type::BLACK. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_piece_a0602222d442db964778b25d3e7b930cc_cgraph.png" border="0" usemap="#class_piece_a0602222d442db964778b25d3e7b930cc_cgraph" alt=""/></div>
+<map name="class_piece_a0602222d442db964778b25d3e7b930cc_cgraph" id="class_piece_a0602222d442db964778b25d3e7b930cc_cgraph">
+<area shape="rect" id="node3" href="class_board_entity.html#aef7592bf7ad04fb47402cbbea5fac723" title="Gets the position of the BoardEntity." alt="" coords="150,5,293,32"/><area shape="rect" id="node5" href="class_piece.html#a64d970cf7c3d34014d8a36cc3bd3c908" title="Gets the type of the piece." alt="" coords="177,56,265,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae18523c400cb72a50bb1293d27cd1432"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Piece::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets information about the current piece. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the type and position of the piece in a human readable format. </dd></dl>
+
+<p>Implements <a class="el" href="class_printable.html#a489f74384330f76d048d1ccf5c541571">Printable</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad41386c09d8ca34799398a2c11036cce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Piece::type </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_piece.html#abcd044975b3657962abfd2ded9194b09">Piece::Type</a> &amp;&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the type of the piece. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The type of the piece </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_piece_ad41386c09d8ca34799398a2c11036cce_cgraph.png" border="0" usemap="#class_piece_ad41386c09d8ca34799398a2c11036cce_cgraph" alt=""/></div>
+<map name="class_piece_ad41386c09d8ca34799398a2c11036cce_cgraph" id="class_piece_ad41386c09d8ca34799398a2c11036cce_cgraph">
+<area shape="rect" id="node3" href="class_piece.html#a64d970cf7c3d34014d8a36cc3bd3c908" title="Gets the type of the piece." alt="" coords="141,5,229,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_piece_ad41386c09d8ca34799398a2c11036cce_icgraph.png" border="0" usemap="#class_piece_ad41386c09d8ca34799398a2c11036cce_icgraph" alt=""/></div>
+<map name="class_piece_ad41386c09d8ca34799398a2c11036cce_icgraph" id="class_piece_ad41386c09d8ca34799398a2c11036cce_icgraph">
+<area shape="rect" id="node3" href="class_piece.html#a97dfab7bb313f6e94eb23d4b8736bdac" title="Piece copy constructor." alt="" coords="141,5,237,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a64d970cf7c3d34014d8a36cc3bd3c908"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_piece.html#abcd044975b3657962abfd2ded9194b09">Piece::Type</a> &amp; Piece::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the type of the piece. </p>
+<dl class="section return"><dt>Returns</dt><dd>Returns the type of the piece </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_piece_a64d970cf7c3d34014d8a36cc3bd3c908_icgraph.png" border="0" usemap="#class_piece_a64d970cf7c3d34014d8a36cc3bd3c908_icgraph" alt=""/></div>
+<map name="class_piece_a64d970cf7c3d34014d8a36cc3bd3c908_icgraph" id="class_piece_a64d970cf7c3d34014d8a36cc3bd3c908_icgraph">
+<area shape="rect" id="node3" href="class_piece.html#a64870ec3fe38b7f88c802d91db861abb" title="Default Piece Constructor Initialises tile object with Piece::Type::Black and position &#45;1..." alt="" coords="141,5,237,32"/><area shape="rect" id="node5" href="class_piece.html#ad41386c09d8ca34799398a2c11036cce" title="Sets the type of the piece." alt="" coords="145,56,233,83"/><area shape="rect" id="node7" href="class_piece.html#a97dfab7bb313f6e94eb23d4b8736bdac" title="Piece copy constructor." alt="" coords="285,56,381,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/git ws/Hnefatafl/Hnefatafl/<a class="el" href="_piece_8h_source.html">Piece.h</a></li>
-<li>D:/git ws/Hnefatafl/Hnefatafl/Piece.cpp</li>
+<li>D:/git ws/Hnefatafl/Hnefatafl/<a class="el" href="_piece_8hpp_source.html">Piece.hpp</a></li>
+<li>D:/git ws/Hnefatafl/Hnefatafl/<a class="el" href="_piece_8cpp.html">Piece.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 13 2013 23:15:16 for Hnefatafl by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 14 2013 00:59:35 for Hnefatafl by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

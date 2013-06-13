@@ -1,0 +1,5 @@
+<map id="Tile::type" name="Tile::type">
+<area shape="rect" id="node3" href="$class_tile.html#a93fdcc8c693044a3bb3590bdb6daed2a" title="Default Tile Constructor Initialises tile object with Tile::Type::EMPTY and position &#45;1..." alt="" coords="130,5,201,32"/>
+<area shape="rect" id="node5" href="$class_tile.html#af6644c418cbb05f4af1bb0bae756a96f" title="Set the type of the tile." alt="" coords="128,56,203,83"/>
+<area shape="rect" id="node7" href="$class_tile.html#a43886ac5f7fbcc05b5c26e34371ec599" title="Tile copy constructor." alt="" coords="251,56,322,83"/>
+</map>

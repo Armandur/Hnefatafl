@@ -1,0 +1,4 @@
+<map id="BoardEntity" name="BoardEntity">
+<area shape="rect" id="node3" href="$class_piece.html" title="Describes a piece on the gameboard." alt="" coords="5,80,59,107"/>
+<area shape="rect" id="node5" href="$class_tile.html" title="Describes a tile on the gameboard." alt="" coords="84,80,127,107"/>
+</map>

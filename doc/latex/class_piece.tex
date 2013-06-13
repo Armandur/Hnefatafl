@@ -1,41 +1,223 @@
 \hypertarget{class_piece}{\section{Piece Class Reference}
 \label{class_piece}\index{Piece@{Piece}}
 }
+
+
+Describes a piece on the gameboard.  
+
+
+
+
+{\ttfamily \#include $<$Piece.\-hpp$>$}
+
+
+
+Inheritance diagram for Piece\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_piece__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Piece\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_piece__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum {\bfseries Type} \{ {\bfseries B\-L\-A\-C\-K}, 
+enum \hyperlink{class_piece_abcd044975b3657962abfd2ded9194b09}{Type} \{ {\bfseries B\-L\-A\-C\-K}, 
 {\bfseries W\-H\-I\-T\-E}, 
 {\bfseries K\-I\-N\-G}
  \}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Different types of Pieces. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_piece_ade398b866a6f8eca384313ef38adb2b4}{{\bfseries Piece} (const \hyperlink{class_piece}{Piece} \&org)}\label{class_piece_ade398b866a6f8eca384313ef38adb2b4}
+\hypertarget{class_piece_a64870ec3fe38b7f88c802d91db861abb}{\hyperlink{class_piece_a64870ec3fe38b7f88c802d91db861abb}{Piece} (void)}\label{class_piece_a64870ec3fe38b7f88c802d91db861abb}
 
-\item 
-\hypertarget{class_piece_a7814f9f5f8ed57196c3baeca6fbada7c}{{\bfseries Piece} (const sf\-::\-Vector2$<$ int $>$ pos, Piece\-::\-Type type=Type\-::\-B\-L\-A\-C\-K)}\label{class_piece_a7814f9f5f8ed57196c3baeca6fbada7c}
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{class_piece}{Piece} Constructor Initialises tile object with Piece\-::\-Type\-::\-Black and position -\/1, -\/1. \end{DoxyCompactList}\item 
+\hyperlink{class_piece_a97dfab7bb313f6e94eb23d4b8736bdac}{Piece} (const \hyperlink{class_piece}{Piece} \&src)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_piece}{Piece} copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_piece_a0602222d442db964778b25d3e7b930cc}{Piece} (const sf\-::\-Vector2$<$ int $>$ \&pos, const \hyperlink{class_piece_abcd044975b3657962abfd2ded9194b09}{Piece\-::\-Type} \&\hyperlink{class_piece_ad41386c09d8ca34799398a2c11036cce}{type}=Piece\-::\-Type\-::\-B\-L\-A\-C\-K)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_piece}{Piece} constructor with position and type. \end{DoxyCompactList}\item 
+\hypertarget{class_piece_ad28316e726ffa96f258a79ea90e41d16}{\hyperlink{class_piece_ad28316e726ffa96f258a79ea90e41d16}{$\sim$\-Piece} (void)}\label{class_piece_ad28316e726ffa96f258a79ea90e41d16}
 
-\item 
-\hypertarget{class_piece_a4888185e8742c81931da148fa3ff36bd}{Piece\-::\-Type {\bfseries type} () const }\label{class_piece_a4888185e8742c81931da148fa3ff36bd}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_piece}{Piece} destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_piece_ad41386c09d8ca34799398a2c11036cce}{type} (const \hyperlink{class_piece_abcd044975b3657962abfd2ded9194b09}{Piece\-::\-Type} \&type)
+\begin{DoxyCompactList}\small\item\em Sets the type of the piece. \end{DoxyCompactList}\item 
+const \hyperlink{class_piece_abcd044975b3657962abfd2ded9194b09}{Piece\-::\-Type} \& \hyperlink{class_piece_a64d970cf7c3d34014d8a36cc3bd3c908}{type} () const 
+\begin{DoxyCompactList}\small\item\em Gets the type of the piece. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_piece_ae18523c400cb72a50bb1293d27cd1432}{to\-String} ()
+\begin{DoxyCompactList}\small\item\em Gets information about the current piece. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
-\item 
-\hypertarget{class_piece_afe3475e61645287242c66949104a2784}{void {\bfseries type} (const Piece\-::\-Type \&)}\label{class_piece_afe3475e61645287242c66949104a2784}
 
-\item 
-\hypertarget{class_piece_a22dd5bed371836d889fc9b92b1626c82}{sf\-::\-Vector2$<$ int $>$ {\bfseries position} () const }\label{class_piece_a22dd5bed371836d889fc9b92b1626c82}
+\subsection{Detailed Description}
+Describes a piece on the gameboard. 
 
-\item 
-\hypertarget{class_piece_a33a7b407dfb40bdad6a5a4bd5be39b78}{void {\bfseries position} (const sf\-::\-Vector2$<$ int $>$ pos)}\label{class_piece_a33a7b407dfb40bdad6a5a4bd5be39b78}
+\begin{DoxyAuthor}{Author}
+Rasmus Pettersson Vik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+juni 2013 
+\end{DoxyDate}
 
-\item 
-\hypertarget{class_piece_a87319cd2ae0dbf73398876d89fba3101}{std\-::string {\bfseries to\-String} () const }\label{class_piece_a87319cd2ae0dbf73398876d89fba3101}
 
-\end{DoxyCompactItemize}
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_piece_a97dfab7bb313f6e94eb23d4b8736bdac}{\index{Piece@{Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!Piece@{Piece}}
+\subsubsection[{Piece}]{\setlength{\rightskip}{0pt plus 5cm}Piece\-::\-Piece (
+\begin{DoxyParamCaption}
+\item[{const {\bf Piece} \&}]{src}
+\end{DoxyParamCaption}
+)}}\label{class_piece_a97dfab7bb313f6e94eb23d4b8736bdac}
+
+
+\hyperlink{class_piece}{Piece} copy constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em src} & Source to copy from \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_piece_a97dfab7bb313f6e94eb23d4b8736bdac_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_piece_a0602222d442db964778b25d3e7b930cc}{\index{Piece@{Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!Piece@{Piece}}
+\subsubsection[{Piece}]{\setlength{\rightskip}{0pt plus 5cm}Piece\-::\-Piece (
+\begin{DoxyParamCaption}
+\item[{const sf\-::\-Vector2$<$ int $>$ \&}]{pos, }
+\item[{const {\bf Piece\-::\-Type} \&}]{type = {\ttfamily Piece\-:\-:Type\-:\-:BLACK}}
+\end{DoxyParamCaption}
+)}}\label{class_piece_a0602222d442db964778b25d3e7b930cc}
+
+
+\hyperlink{class_piece}{Piece} constructor with position and type. 
+
+Initialises tile object with the position pos and default type of Piece\-::\-Type\-::\-B\-L\-A\-C\-K.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & The position to set the piece to. \\
+\hline
+\mbox{\tt in}  & {\em type} & The type to set the piece to. Default is Piece\-::\-Type\-::\-B\-L\-A\-C\-K. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_piece_a0602222d442db964778b25d3e7b930cc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_piece_ae18523c400cb72a50bb1293d27cd1432}{\index{Piece@{Piece}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Piece@{Piece}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Piece\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_piece_ae18523c400cb72a50bb1293d27cd1432}
+
+
+Gets information about the current piece. 
+
+\begin{DoxyReturn}{Returns}
+Returns the type and position of the piece in a human readable format. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_printable_a489f74384330f76d048d1ccf5c541571}{Printable}.
+
+\hypertarget{class_piece_ad41386c09d8ca34799398a2c11036cce}{\index{Piece@{Piece}!type@{type}}
+\index{type@{type}!Piece@{Piece}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}void Piece\-::type (
+\begin{DoxyParamCaption}
+\item[{const {\bf Piece\-::\-Type} \&}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_piece_ad41386c09d8ca34799398a2c11036cce}
+
+
+Sets the type of the piece. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em type} & The type of the piece \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{class_piece_ad41386c09d8ca34799398a2c11036cce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{class_piece_ad41386c09d8ca34799398a2c11036cce_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_piece_a64d970cf7c3d34014d8a36cc3bd3c908}{\index{Piece@{Piece}!type@{type}}
+\index{type@{type}!Piece@{Piece}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Piece\-::\-Type} \& Piece\-::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_piece_a64d970cf7c3d34014d8a36cc3bd3c908}
+
+
+Gets the type of the piece. 
+
+\begin{DoxyReturn}{Returns}
+Returns the type of the piece 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_piece_a64d970cf7c3d34014d8a36cc3bd3c908_icgraph}
+\end{center}
+\end{figure}
+
+
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/git ws/\-Hnefatafl/\-Hnefatafl/Piece.\-h\item 
-D\-:/git ws/\-Hnefatafl/\-Hnefatafl/Piece.\-cpp\end{DoxyCompactItemize}
+D\-:/git ws/\-Hnefatafl/\-Hnefatafl/\hyperlink{_piece_8hpp}{Piece.\-hpp}\item 
+D\-:/git ws/\-Hnefatafl/\-Hnefatafl/\hyperlink{_piece_8cpp}{Piece.\-cpp}\end{DoxyCompactItemize}

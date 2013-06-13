@@ -62,6 +62,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,23 +89,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_piece.html">Piece</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>BLACK</b> enum value (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_board_entity.html#a2c4f3a3dbd1aa78abc228ce86d109303">_position</a></td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>BLACK</b> enum value (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_board_entity.html#a809e46488b5db0ca8940176296548d4c">BoardEntity</a>(void)</td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>KING</b> enum value (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>Piece</b>() (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>Piece</b>(const Piece &amp;org) (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>Piece</b>(const sf::Vector2&lt; int &gt; pos, Piece::Type type=Type::BLACK) (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>position</b>() const  (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>position</b>(const sf::Vector2&lt; int &gt; pos) (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>toString</b>() const  (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>type</b>() const  (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>type</b>(const Piece::Type &amp;) (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>Type</b> enum name (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_piece.html#a64870ec3fe38b7f88c802d91db861abb">Piece</a>(void)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_piece.html#a97dfab7bb313f6e94eb23d4b8736bdac">Piece</a>(const Piece &amp;src)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_piece.html#a0602222d442db964778b25d3e7b930cc">Piece</a>(const sf::Vector2&lt; int &gt; &amp;pos, const Piece::Type &amp;type=Piece::Type::BLACK)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_board_entity.html#a177b0ebff2150101415eb70b4fc677cb">position</a>(const sf::Vector2&lt; int &gt; &amp;pos)</td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_board_entity.html#aef7592bf7ad04fb47402cbbea5fac723">position</a>() const </td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_piece.html#ae18523c400cb72a50bb1293d27cd1432">toString</a>()</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_piece.html#ad41386c09d8ca34799398a2c11036cce">type</a>(const Piece::Type &amp;type)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_piece.html#a64d970cf7c3d34014d8a36cc3bd3c908">type</a>() const </td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_piece.html#abcd044975b3657962abfd2ded9194b09">Type</a> enum name</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>WHITE</b> enum value (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>~Piece</b>() (defined in <a class="el" href="class_piece.html">Piece</a>)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_board_entity.html#a5856127ebd5b45c32e745cca13b0775d">~BoardEntity</a>(void)</td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_piece.html#ad28316e726ffa96f258a79ea90e41d16">~Piece</a>(void)</td><td class="entry"><a class="el" href="class_piece.html">Piece</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 13 2013 23:15:16 for Hnefatafl by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 14 2013 00:59:35 for Hnefatafl by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

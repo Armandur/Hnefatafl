@@ -1,0 +1,138 @@
+\hypertarget{class_board_entity}{\section{Board\-Entity Class Reference}
+\label{class_board_entity}\index{Board\-Entity@{Board\-Entity}}
+}
+
+
+Abstract baseclass for an entity with a position on the gameboard.  
+
+
+
+
+{\ttfamily \#include $<$Board\-Entity.\-hpp$>$}
+
+
+
+Inheritance diagram for Board\-Entity\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_board_entity__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_board_entity_a809e46488b5db0ca8940176296548d4c}{\hyperlink{class_board_entity_a809e46488b5db0ca8940176296548d4c}{Board\-Entity} (void)}\label{class_board_entity_a809e46488b5db0ca8940176296548d4c}
+
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{class_board_entity}{Board\-Entity} Constructor Runs \hyperlink{class_board_entity_abb7251fa8167ce5618076a79427c8521}{\-\_\-init()} and initialises \-\_\-position to (-\/1, -\/1) \end{DoxyCompactList}\item 
+\hypertarget{class_board_entity_a5856127ebd5b45c32e745cca13b0775d}{virtual \hyperlink{class_board_entity_a5856127ebd5b45c32e745cca13b0775d}{$\sim$\-Board\-Entity} (void)}\label{class_board_entity_a5856127ebd5b45c32e745cca13b0775d}
+
+\begin{DoxyCompactList}\small\item\em Virtual \hyperlink{class_board_entity}{Board\-Entity} destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_entity_a177b0ebff2150101415eb70b4fc677cb}{position} (const sf\-::\-Vector2$<$ int $>$ \&pos)
+\begin{DoxyCompactList}\small\item\em Sets the position of the \hyperlink{class_board_entity}{Board\-Entity}. \end{DoxyCompactList}\item 
+const sf\-::\-Vector2$<$ int $>$ \& \hyperlink{class_board_entity_aef7592bf7ad04fb47402cbbea5fac723}{position} () const 
+\begin{DoxyCompactList}\small\item\em Gets the position of the \hyperlink{class_board_entity}{Board\-Entity}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_board_entity_abb7251fa8167ce5618076a79427c8521}{\-\_\-init} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_board_entity_a2c4f3a3dbd1aa78abc228ce86d109303}{sf\-::\-Vector2$<$ int $>$ \hyperlink{class_board_entity_a2c4f3a3dbd1aa78abc228ce86d109303}{\-\_\-position}}\label{class_board_entity_a2c4f3a3dbd1aa78abc228ce86d109303}
+
+\begin{DoxyCompactList}\small\item\em Holds the current position of the \hyperlink{class_board_entity}{Board\-Entity}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract baseclass for an entity with a position on the gameboard. 
+
+\begin{DoxyAuthor}{Author}
+Rasmus Pettersson Vik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+juni 2013 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_board_entity_abb7251fa8167ce5618076a79427c8521}{\index{Board\-Entity@{Board\-Entity}!\-\_\-init@{\-\_\-init}}
+\index{\-\_\-init@{\-\_\-init}!BoardEntity@{Board\-Entity}}
+\subsubsection[{\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-Entity\-::\-\_\-init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_board_entity_abb7251fa8167ce5618076a79427c8521}
+Initialising function \begin{DoxyNote}{Note}
+Should be run in every constructor! 
+\end{DoxyNote}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_board_entity_abb7251fa8167ce5618076a79427c8521_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_board_entity_a177b0ebff2150101415eb70b4fc677cb}{\index{Board\-Entity@{Board\-Entity}!position@{position}}
+\index{position@{position}!BoardEntity@{Board\-Entity}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-Entity\-::position (
+\begin{DoxyParamCaption}
+\item[{const sf\-::\-Vector2$<$ int $>$ \&}]{pos}
+\end{DoxyParamCaption}
+)}}\label{class_board_entity_a177b0ebff2150101415eb70b4fc677cb}
+
+
+Sets the position of the \hyperlink{class_board_entity}{Board\-Entity}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & The position to set. \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_board_entity_a177b0ebff2150101415eb70b4fc677cb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_board_entity_aef7592bf7ad04fb47402cbbea5fac723}{\index{Board\-Entity@{Board\-Entity}!position@{position}}
+\index{position@{position}!BoardEntity@{Board\-Entity}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}const sf\-::\-Vector2$<$ int $>$ \& Board\-Entity\-::position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_board_entity_aef7592bf7ad04fb47402cbbea5fac723}
+
+
+Gets the position of the \hyperlink{class_board_entity}{Board\-Entity}. 
+
+\begin{DoxyReturn}{Returns}
+Gets the position of the \hyperlink{class_board_entity}{Board\-Entity}. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_board_entity_aef7592bf7ad04fb47402cbbea5fac723_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+D\-:/git ws/\-Hnefatafl/\-Hnefatafl/\hyperlink{_board_entity_8hpp}{Board\-Entity.\-hpp}\item 
+D\-:/git ws/\-Hnefatafl/\-Hnefatafl/\hyperlink{_board_entity_8cpp}{Board\-Entity.\-cpp}\end{DoxyCompactItemize}

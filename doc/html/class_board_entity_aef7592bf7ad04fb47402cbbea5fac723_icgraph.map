@@ -1,0 +1,5 @@
+<map id="BoardEntity::position" name="BoardEntity::position">
+<area shape="rect" id="node3" href="$class_board_entity.html#a809e46488b5db0ca8940176296548d4c" title="Default BoardEntity Constructor Runs _init() and initialises _position to (&#45;1, &#45;1)" alt="" coords="198,5,365,32"/>
+<area shape="rect" id="node5" href="$class_piece.html#a64870ec3fe38b7f88c802d91db861abb" title="Default Piece Constructor Initialises tile object with Piece::Type::Black and position &#45;1..." alt="" coords="233,56,329,83"/>
+<area shape="rect" id="node7" href="$class_tile.html#a93fdcc8c693044a3bb3590bdb6daed2a" title="Default Tile Constructor Initialises tile object with Tile::Type::EMPTY and position &#45;1..." alt="" coords="246,107,317,133"/>
+</map>

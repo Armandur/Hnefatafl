@@ -1,0 +1,5 @@
+<map id="Piece::type" name="Piece::type">
+<area shape="rect" id="node3" href="$class_piece.html#a64870ec3fe38b7f88c802d91db861abb" title="Default Piece Constructor Initialises tile object with Piece::Type::Black and position &#45;1..." alt="" coords="141,5,237,32"/>
+<area shape="rect" id="node5" href="$class_piece.html#ad41386c09d8ca34799398a2c11036cce" title="Sets the type of the piece." alt="" coords="145,56,233,83"/>
+<area shape="rect" id="node7" href="$class_piece.html#a97dfab7bb313f6e94eb23d4b8736bdac" title="Piece copy constructor." alt="" coords="285,56,381,83"/>
+</map>
