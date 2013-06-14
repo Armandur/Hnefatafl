@@ -1,0 +1,80 @@
+\hypertarget{class_engine}{\section{Engine Class Reference}
+\label{class_engine}\index{Engine@{Engine}}
+}
+
+
+Game engine with state machine, logic-\/ and event handling.  
+
+
+
+
+{\ttfamily \#include $<$Engine.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_engine_a0f9c21ea40811053a338aab4b142461b}{void \hyperlink{class_engine_a0f9c21ea40811053a338aab4b142461b}{init} (const std\-::string \&title, const sf\-::\-Vector2$<$ int $>$ dimensions)}\label{class_engine_a0f9c21ea40811053a338aab4b142461b}
+
+\begin{DoxyCompactList}\small\item\em Initialises window and starts engine. \end{DoxyCompactList}\item 
+\hypertarget{class_engine_ae77baba9282f194f49f02cfab00cb9c8}{void \hyperlink{class_engine_ae77baba9282f194f49f02cfab00cb9c8}{clean\-Up} ()}\label{class_engine_ae77baba9282f194f49f02cfab00cb9c8}
+
+\begin{DoxyCompactList}\small\item\em Performs cleanup at end of life. \end{DoxyCompactList}\item 
+\hypertarget{class_engine_ae6dbb51c6e1ff5ecd4f4bd1afecd4f11}{void \hyperlink{class_engine_ae6dbb51c6e1ff5ecd4f4bd1afecd4f11}{change\-State} (\hyperlink{class_state}{State} $\ast$state)}\label{class_engine_ae6dbb51c6e1ff5ecd4f4bd1afecd4f11}
+
+\begin{DoxyCompactList}\small\item\em Change the current state. \end{DoxyCompactList}\item 
+\hypertarget{class_engine_a8efcd77851c6446bb89047d97293dd80}{void \hyperlink{class_engine_a8efcd77851c6446bb89047d97293dd80}{push\-State} (\hyperlink{class_state}{State} $\ast$state)}\label{class_engine_a8efcd77851c6446bb89047d97293dd80}
+
+\begin{DoxyCompactList}\small\item\em Push another state to the state machine, pausing the current one. \end{DoxyCompactList}\item 
+\hypertarget{class_engine_a65f4afabccdbc04c11beab562dd77d53}{void \hyperlink{class_engine_a65f4afabccdbc04c11beab562dd77d53}{pop\-State} ()}\label{class_engine_a65f4afabccdbc04c11beab562dd77d53}
+
+\begin{DoxyCompactList}\small\item\em Resume a state after another one has been pushed on top. \end{DoxyCompactList}\item 
+\hypertarget{class_engine_ad1e8214e8ca9f436d27a7246dd908d9c}{void \hyperlink{class_engine_ad1e8214e8ca9f436d27a7246dd908d9c}{handle\-Events} ()}\label{class_engine_ad1e8214e8ca9f436d27a7246dd908d9c}
+
+\begin{DoxyCompactList}\small\item\em Handle events. \end{DoxyCompactList}\item 
+\hypertarget{class_engine_ad2ff110d5a86c1cd60b541d65915ac48}{void \hyperlink{class_engine_ad2ff110d5a86c1cd60b541d65915ac48}{update} ()}\label{class_engine_ad2ff110d5a86c1cd60b541d65915ac48}
+
+\begin{DoxyCompactList}\small\item\em Update engine. \end{DoxyCompactList}\item 
+\hypertarget{class_engine_a1b654dc41dfbcb5072147f33142b726e}{void \hyperlink{class_engine_a1b654dc41dfbcb5072147f33142b726e}{draw} ()}\label{class_engine_a1b654dc41dfbcb5072147f33142b726e}
+
+\begin{DoxyCompactList}\small\item\em Draw stuff. \end{DoxyCompactList}\item 
+const bool \& \hyperlink{class_engine_a06d23c7cf9fa2242c84b902d4960fcf4}{running} () const 
+\item 
+\hypertarget{class_engine_abd6e5ae9f755e283f4cc6b69ab24c582}{void \hyperlink{class_engine_abd6e5ae9f755e283f4cc6b69ab24c582}{quit} ()}\label{class_engine_abd6e5ae9f755e283f4cc6b69ab24c582}
+
+\begin{DoxyCompactList}\small\item\em Exit the engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_engine_acb19f573e60457464cc73625d7882653}{sf\-::\-Render\-Window $\ast$ \hyperlink{class_engine_acb19f573e60457464cc73625d7882653}{window}}\label{class_engine_acb19f573e60457464cc73625d7882653}
+
+\begin{DoxyCompactList}\small\item\em Pointer to the current S\-F\-M\-L Render\-Window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Game engine with state machine, logic-\/ and event handling. 
+
+\begin{DoxyAuthor}{Author}
+Rasmus Pettersson Vik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+juni 2013 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_engine_a06d23c7cf9fa2242c84b902d4960fcf4}{\index{Engine@{Engine}!running@{running}}
+\index{running@{running}!Engine@{Engine}}
+\subsubsection[{running}]{\setlength{\rightskip}{0pt plus 5cm}const bool\& Engine\-::running (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_engine_a06d23c7cf9fa2242c84b902d4960fcf4}
+\begin{DoxyReturn}{Returns}
+Returns true if the engine is running 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Hnefatafl/\hyperlink{_engine_8hpp}{Engine.\-hpp}\item 
+Hnefatafl/\hyperlink{_engine_8cpp}{Engine.\-cpp}\end{DoxyCompactItemize}

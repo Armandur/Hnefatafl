@@ -90,60 +90,68 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="_board_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_printable_8hpp.html">Printable.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tile_8hpp.html">Tile.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_serializable_8hpp.html">Serializable.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="class_board.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_board.html" title="Defines a board for Hnefatafl.">Board</a> : <span class="keyword">public</span> <a class="code" href="class_printable.html" title="Abstract class implementing std::string toString() functionality.">Printable</a>, <span class="keyword">public</span> <a class="code" href="class_serializable.html" title="Interface for serializing classes to JSON.">Serializable</a></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644">   29</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644" title="Different types of boards.">Type</a>{HNEFATAFL, ALEA, TABLUT};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_board.html#a469583fc5c99cd2aa4c6b6bd1250743b" title="Default Board constructor.">Board</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;SFML/System.hpp&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_printable_8hpp.html">Printable.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_serializable_8hpp.html">Serializable.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="class_tile.html" title="Describes a tile on the gameboard.">Tile</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="class_piece.html" title="Describes a piece on the gameboard.">Piece</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_board.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_board.html" title="Defines a board for Hnefatafl.">Board</a> : <span class="keyword">public</span> <a class="code" href="class_printable.html" title="Abstract class implementing std::string toString() functionality.">Printable</a>, <span class="keyword">public</span> <a class="code" href="class_serializable.html" title="Interface for serializing classes to JSON.">Serializable</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644">   39</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644">Type</a>{ARD, BRANDUB, TABLUT, TAWLBYUND, HNEFATAFL, ALEA};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_board.html#a469583fc5c99cd2aa4c6b6bd1250743b" title="Default Board constructor.">Board</a>(<span class="keyword">const</span> <a class="code" href="class_board.html" title="Defines a board for Hnefatafl.">Board</a>&amp; src);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_board.html#a469583fc5c99cd2aa4c6b6bd1250743b" title="Default Board constructor.">Board</a>(<span class="keyword">const</span> <a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644" title="Different types of boards.">Board::Type</a> <a class="code" href="class_board.html#ab2574abe1bfa632795d2b35ba1acb2e4" title="Gets the type of the board.">type</a> = Board::Type::HNEFATAFL);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_board.html#af67811d3be762bf75ebe5b2dc4b3070e" title="Board constructor with setting of boardtype.">Board</a>(<span class="keyword">const</span> <a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644">Board::Type</a> <a class="code" href="class_board.html#ab2574abe1bfa632795d2b35ba1acb2e4" title="Gets the type of the board.">type</a> = Board::Type::HNEFATAFL);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_board.html#af67811d3be762bf75ebe5b2dc4b3070e" title="Board constructor with setting of boardtype.">Board</a>(<span class="keyword">const</span> <a class="code" href="class_board.html" title="Defines a board for Hnefatafl.">Board</a>&amp; src);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_board.html#a737c0ecdabeccd0460bcbae2f8ac6c44" title="Board destructor.">~Board</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_board.html" title="Defines a board for Hnefatafl.">Board</a>&amp; <a class="code" href="class_board.html#a57a4317cebaae4f6879856262cf9caae" title="Board assignment operator.">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_board.html" title="Defines a board for Hnefatafl.">Board</a>&amp; rhs);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_tile.html" title="Describes a tile on the gameboard.">Tile</a>* <a class="code" href="class_board.html#a4dd030ffcb9abc165ace3734e34dd26f" title="Returns a pointer to the tile at position pos.">getTile</a>(sf::Vector2&lt;int&gt; pos);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#a7cef7a9ca499d64c71cb170d67f76ad0" title="Resets the board according to Board::Type _type.">resetBoard</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#af7b2ac390d5b62212f7b0ba98276e837" title="Loads piece positions based on current type.">loadBoard</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#af7b2ac390d5b62212f7b0ba98276e837" title="Loads piece positions based on current type.">loadBoard</a>(<span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#a67c2acd87290a3359c8244a4cb72b380" title="Saves piece positions to file path.">saveBoard</a>(<span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#ab2574abe1bfa632795d2b35ba1acb2e4" title="Gets the type of the board.">type</a>(<span class="keyword">const</span> <a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644" title="Different types of boards.">Board::Type</a>&amp; <a class="code" href="class_board.html#ab2574abe1bfa632795d2b35ba1acb2e4" title="Gets the type of the board.">type</a>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644" title="Different types of boards.">Board::Type</a>&amp; <a class="code" href="class_board.html#ab2574abe1bfa632795d2b35ba1acb2e4" title="Gets the type of the board.">type</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        std::string <a class="code" href="class_board.html#a2cf2b2f6adc453bc3b086c9f10c77e11" title="Gets information about the current piece.">toString</a>();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; <a class="code" href="class_board.html#a84aaf6583d8b174ef864dc774979b1a2" title="Returns the boards size.">size</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#ab0459595994fae0457f0cf58cd6096a1" title="Serialize the object to JSON.">serialize</a>(Json::Value&amp; root);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="class_tile.html" title="Describes a tile on the gameboard.">Tile</a>* <a class="code" href="class_board.html#afced07c80ca74d286dd9b175a2d5f6a9" title="Returns a pointer to the tile at position pos.">getTile</a>(sf::Vector2&lt;int&gt; pos);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="class_piece.html" title="Describes a piece on the gameboard.">Piece</a>* <a class="code" href="class_board.html#a8761adddad6de7ac38389784e22b3a43" title="Returns a pointer to a piece at position pos.">Board::getPiece</a>(sf::Vector2&lt;int&gt; pos);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#a7cef7a9ca499d64c71cb170d67f76ad0" title="Resets the board according to Board::Type _type.">resetBoard</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#afffa04d521831cad05e566c8d7670d40" title="Loads piece positions based on current type.">loadBoardLayout</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#afffa04d521831cad05e566c8d7670d40" title="Loads piece positions based on current type.">loadBoardLayout</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#a496a9f70f5d4b006f91121cccacdd340" title="Loads pieces and positions from file path.">loadPieces</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#a3b6aaed9aedbe55cbdfe08db472f2656" title="Saves current board positions to file path.">saveCurrentBoard</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#ab2574abe1bfa632795d2b35ba1acb2e4" title="Gets the type of the board.">type</a>(<span class="keyword">const</span> <a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644">Board::Type</a>&amp; <a class="code" href="class_board.html#ab2574abe1bfa632795d2b35ba1acb2e4" title="Gets the type of the board.">type</a>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644">Board::Type</a>&amp; <a class="code" href="class_board.html#ab2574abe1bfa632795d2b35ba1acb2e4" title="Gets the type of the board.">type</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#a40f5300d8b4d641d3123a6e9c3a49a45" title="Deserialize the object.">deSerialize</a>(Json::Value&amp; root);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        std::vector&lt;std::vector&lt;Tile*&gt;&gt; tiles;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644" title="Different types of boards.">Board::Type</a> _type;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordtype">int</span> _size;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        std::string <a class="code" href="class_board.html#a2cf2b2f6adc453bc3b086c9f10c77e11" title="Gets information about the current piece.">toString</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; <a class="code" href="class_board.html#a84aaf6583d8b174ef864dc774979b1a2" title="Returns the boards size.">size</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#ab0459595994fae0457f0cf58cd6096a1" title="Serialize the object to JSON.">serialize</a>(Json::Value&amp; root);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_board.html#a40f5300d8b4d641d3123a6e9c3a49a45" title="Deserialize the object.">deSerialize</a>(Json::Value&amp; root);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        std::vector&lt;std::vector&lt;Tile*&gt;&gt; tiles;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        std::list&lt;Piece*&gt; pieces;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="class_board.html#a7a90fdd0f301fc502684108416605644">Board::Type</a> _type;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordtype">int</span> _size;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 14 2013 14:00:04 for Hnefatafl by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 14 2013 18:29:39 for Hnefatafl by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

@@ -1,6 +1,4 @@
 <map id="Hnefatafl/Board.hpp" name="Hnefatafl/Board.hpp">
-<area shape="rect" id="node7" href="$_printable_8hpp.html" title="Printable.hpp" alt="" coords="31,155,129,181"/>
-<area shape="rect" id="node10" href="$_tile_8hpp.html" title="Tile.hpp" alt="" coords="161,80,228,107"/>
-<area shape="rect" id="node18" href="$_serializable_8hpp.html" title="Serializable.hpp" alt="" coords="343,155,457,181"/>
-<area shape="rect" id="node14" href="$_board_entity_8hpp.html" title="BoardEntity.hpp" alt="" coords="204,155,319,181"/>
+<area shape="rect" id="node11" href="$_printable_8hpp.html" title="Printable.hpp" alt="" coords="323,80,422,107"/>
+<area shape="rect" id="node14" href="$_serializable_8hpp.html" title="Serializable.hpp" alt="" coords="446,80,561,107"/>
 </map>

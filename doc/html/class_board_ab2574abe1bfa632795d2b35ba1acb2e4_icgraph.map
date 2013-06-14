@@ -1,4 +1,6 @@
 <map id="Board::type" name="Board::type">
-<area shape="rect" id="node3" href="$class_board.html#a469583fc5c99cd2aa4c6b6bd1250743b" title="Default Board constructor." alt="" coords="144,5,243,32"/>
-<area shape="rect" id="node5" href="$class_board.html#a05a3dd8f1f000e20e743e894163228ec" title="Sets the type of the board." alt="" coords="149,56,238,83"/>
+<area shape="rect" id="node3" href="$class_board.html#af67811d3be762bf75ebe5b2dc4b3070e" title="Board constructor with setting of boardtype." alt="" coords="355,5,453,32"/>
+<area shape="rect" id="node5" href="$class_board.html#afffa04d521831cad05e566c8d7670d40" title="Loads piece positions based on current type." alt="" coords="145,31,306,57"/>
+<area shape="rect" id="node8" href="$class_board.html#a05a3dd8f1f000e20e743e894163228ec" title="Sets the type of the board." alt="" coords="181,81,270,108"/>
+<area shape="rect" id="node10" href="$class_board.html#a0830880c4f04fa4500e23d67dfec525d" title="Copy Board constructor." alt="" coords="355,81,453,108"/>
 </map>

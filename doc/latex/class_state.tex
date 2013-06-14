@@ -1,0 +1,65 @@
+\hypertarget{class_state}{\section{State Class Reference}
+\label{class_state}\index{State@{State}}
+}
+
+
+Abstract baseclass for a state for use in the game engine.  
+
+
+
+
+{\ttfamily \#include $<$State.\-hpp$>$}
+
+
+
+Inheritance diagram for State\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{class_state__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_state_a2ff5faa41a5811007e8d50542365640b}{virtual void \hyperlink{class_state_a2ff5faa41a5811007e8d50542365640b}{init} ()=0}\label{class_state_a2ff5faa41a5811007e8d50542365640b}
+
+\begin{DoxyCompactList}\small\item\em Initalises state. \end{DoxyCompactList}\item 
+\hypertarget{class_state_a83d0132231b6cc7334d98926f6b61da5}{virtual void \hyperlink{class_state_a83d0132231b6cc7334d98926f6b61da5}{clean\-Up} ()=0}\label{class_state_a83d0132231b6cc7334d98926f6b61da5}
+
+\begin{DoxyCompactList}\small\item\em Performs clean\-Up at end of state. \end{DoxyCompactList}\item 
+\hypertarget{class_state_ad8530393b468e4494f965f61259c84c4}{virtual void \hyperlink{class_state_ad8530393b468e4494f965f61259c84c4}{pause} ()=0}\label{class_state_ad8530393b468e4494f965f61259c84c4}
+
+\begin{DoxyCompactList}\small\item\em Pauses state. \end{DoxyCompactList}\item 
+\hypertarget{class_state_a6397f6c277e077f5284f06c9902b63ee}{virtual void \hyperlink{class_state_a6397f6c277e077f5284f06c9902b63ee}{resume} ()=0}\label{class_state_a6397f6c277e077f5284f06c9902b63ee}
+
+\begin{DoxyCompactList}\small\item\em Resumes state. \end{DoxyCompactList}\item 
+\hypertarget{class_state_a94baa51f73b5ebc734328149f504e863}{virtual void \hyperlink{class_state_a94baa51f73b5ebc734328149f504e863}{handle\-Events} (\hyperlink{class_engine}{Engine} $\ast$game)=0}\label{class_state_a94baa51f73b5ebc734328149f504e863}
+
+\begin{DoxyCompactList}\small\item\em Handle events. \end{DoxyCompactList}\item 
+\hypertarget{class_state_a59328638adca519ab9f71aeea59620fa}{virtual void \hyperlink{class_state_a59328638adca519ab9f71aeea59620fa}{update} (\hyperlink{class_engine}{Engine} $\ast$game)=0}\label{class_state_a59328638adca519ab9f71aeea59620fa}
+
+\begin{DoxyCompactList}\small\item\em Update state. \end{DoxyCompactList}\item 
+\hypertarget{class_state_a9805910fcf77a70b00c0c26ef37898f6}{virtual void \hyperlink{class_state_a9805910fcf77a70b00c0c26ef37898f6}{draw} (\hyperlink{class_engine}{Engine} $\ast$game)=0}\label{class_state_a9805910fcf77a70b00c0c26ef37898f6}
+
+\begin{DoxyCompactList}\small\item\em Draw graphics. \end{DoxyCompactList}\item 
+\hypertarget{class_state_a2244bb66f8aafc2e9d2fd3366ed1e575}{void \hyperlink{class_state_a2244bb66f8aafc2e9d2fd3366ed1e575}{change\-State} (\hyperlink{class_engine}{Engine} $\ast$game, \hyperlink{class_state}{State} $\ast$state)}\label{class_state_a2244bb66f8aafc2e9d2fd3366ed1e575}
+
+\begin{DoxyCompactList}\small\item\em Change the state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract baseclass for a state for use in the game engine. 
+
+\begin{DoxyAuthor}{Author}
+Rasmus Pettersson Vik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+juni 2013 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Hnefatafl/\hyperlink{_state_8hpp}{State.\-hpp}\end{DoxyCompactItemize}
