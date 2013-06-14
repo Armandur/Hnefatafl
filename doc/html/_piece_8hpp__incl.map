@@ -1,4 +1,5 @@
-<map id="D:/git ws/Hnefatafl/Hnefatafl/Piece.hpp" name="D:/git ws/Hnefatafl/Hnefatafl/Piece.hpp">
-<area shape="rect" id="node5" href="$_board_entity_8hpp.html" title="BoardEntity.hpp" alt="" coords="61,96,176,123"/>
-<area shape="rect" id="node8" href="$_printable_8hpp.html" title="Printable.hpp" alt="" coords="200,96,299,123"/>
+<map id="Hnefatafl/Piece.hpp" name="Hnefatafl/Piece.hpp">
+<area shape="rect" id="node5" href="$_board_entity_8hpp.html" title="BoardEntity.hpp" alt="" coords="61,80,176,107"/>
+<area shape="rect" id="node8" href="$_printable_8hpp.html" title="Printable.hpp" alt="" coords="200,80,299,107"/>
+<area shape="rect" id="node12" href="$_serializable_8hpp.html" title="Serializable.hpp" alt="" coords="323,80,437,107"/>
 </map>

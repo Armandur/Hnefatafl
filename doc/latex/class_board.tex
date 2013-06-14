@@ -1,0 +1,286 @@
+\hypertarget{class_board}{\section{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+}
+
+
+Defines a board for Hnefatafl.  
+
+
+
+
+{\ttfamily \#include $<$Board.\-hpp$>$}
+
+
+
+Inheritance diagram for Board\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{class_board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Board\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{class_board__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_board_a7a90fdd0f301fc502684108416605644}{Type} \{ {\bfseries H\-N\-E\-F\-A\-T\-A\-F\-L}, 
+{\bfseries A\-L\-E\-A}, 
+{\bfseries T\-A\-B\-L\-U\-T}
+ \}
+\begin{DoxyCompactList}\small\item\em Different types of boards. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_board_a469583fc5c99cd2aa4c6b6bd1250743b}{Board} (void)
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{class_board}{Board} constructor. \end{DoxyCompactList}\item 
+\hypertarget{class_board_a0830880c4f04fa4500e23d67dfec525d}{\hyperlink{class_board_a0830880c4f04fa4500e23d67dfec525d}{Board} (const \hyperlink{class_board}{Board} \&src)}\label{class_board_a0830880c4f04fa4500e23d67dfec525d}
+
+\begin{DoxyCompactList}\small\item\em Copy \hyperlink{class_board}{Board} constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_board_af67811d3be762bf75ebe5b2dc4b3070e}{Board} (const \hyperlink{class_board_a7a90fdd0f301fc502684108416605644}{Board\-::\-Type} \hyperlink{class_board_a05a3dd8f1f000e20e743e894163228ec}{type}=Board\-::\-Type\-::\-H\-N\-E\-F\-A\-T\-A\-F\-L)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board}{Board} constructor with setting of boardtype. \end{DoxyCompactList}\item 
+\hypertarget{class_board_a737c0ecdabeccd0460bcbae2f8ac6c44}{\hyperlink{class_board_a737c0ecdabeccd0460bcbae2f8ac6c44}{$\sim$\-Board} (void)}\label{class_board_a737c0ecdabeccd0460bcbae2f8ac6c44}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board}{Board} destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} \& \hyperlink{class_board_a57a4317cebaae4f6879856262cf9caae}{operator=} (const \hyperlink{class_board}{Board} \&rhs)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_board}{Board} assignment operator. \end{DoxyCompactList}\item 
+\hyperlink{class_tile}{Tile} $\ast$ \hyperlink{class_board_a4dd030ffcb9abc165ace3734e34dd26f}{get\-Tile} (sf\-::\-Vector2$<$ int $>$ pos)
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the tile at position pos. \end{DoxyCompactList}\item 
+\hypertarget{class_board_a7cef7a9ca499d64c71cb170d67f76ad0}{void \hyperlink{class_board_a7cef7a9ca499d64c71cb170d67f76ad0}{reset\-Board} ()}\label{class_board_a7cef7a9ca499d64c71cb170d67f76ad0}
+
+\begin{DoxyCompactList}\small\item\em Resets the board according to \hyperlink{class_board_a7a90fdd0f301fc502684108416605644}{Board\-::\-Type} \-\_\-type. \end{DoxyCompactList}\item 
+\hypertarget{class_board_af7b2ac390d5b62212f7b0ba98276e837}{void \hyperlink{class_board_af7b2ac390d5b62212f7b0ba98276e837}{load\-Board} ()}\label{class_board_af7b2ac390d5b62212f7b0ba98276e837}
+
+\begin{DoxyCompactList}\small\item\em Loads piece positions based on current type. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a7954dc515c68c3d8926355b1c80cc05f}{load\-Board} (const std\-::string \&path)
+\begin{DoxyCompactList}\small\item\em Loads piece positions from file path. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a67c2acd87290a3359c8244a4cb72b380}{save\-Board} (const std\-::string \&path)
+\begin{DoxyCompactList}\small\item\em Saves piece positions to file path. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a05a3dd8f1f000e20e743e894163228ec}{type} (const \hyperlink{class_board_a7a90fdd0f301fc502684108416605644}{Board\-::\-Type} \&type)
+\begin{DoxyCompactList}\small\item\em Sets the type of the board. \end{DoxyCompactList}\item 
+const \hyperlink{class_board_a7a90fdd0f301fc502684108416605644}{Board\-::\-Type} \& \hyperlink{class_board_ab2574abe1bfa632795d2b35ba1acb2e4}{type} () const 
+\begin{DoxyCompactList}\small\item\em Gets the type of the board. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_board_a2cf2b2f6adc453bc3b086c9f10c77e11}{to\-String} ()
+\begin{DoxyCompactList}\small\item\em Gets information about the current piece. \end{DoxyCompactList}\item 
+\hypertarget{class_board_a84aaf6583d8b174ef864dc774979b1a2}{const int \& \hyperlink{class_board_a84aaf6583d8b174ef864dc774979b1a2}{size} () const }\label{class_board_a84aaf6583d8b174ef864dc774979b1a2}
+
+\begin{DoxyCompactList}\small\item\em Returns the boards size. \end{DoxyCompactList}\item 
+\hypertarget{class_board_ab0459595994fae0457f0cf58cd6096a1}{void \hyperlink{class_board_ab0459595994fae0457f0cf58cd6096a1}{serialize} (Json\-::\-Value \&root)}\label{class_board_ab0459595994fae0457f0cf58cd6096a1}
+
+\begin{DoxyCompactList}\small\item\em Serialize the object to J\-S\-O\-N. \end{DoxyCompactList}\item 
+\hypertarget{class_board_a40f5300d8b4d641d3123a6e9c3a49a45}{void \hyperlink{class_board_a40f5300d8b4d641d3123a6e9c3a49a45}{de\-Serialize} (Json\-::\-Value \&root)}\label{class_board_a40f5300d8b4d641d3123a6e9c3a49a45}
+
+\begin{DoxyCompactList}\small\item\em Deserialize the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines a board for Hnefatafl. 
+
+\begin{DoxyAuthor}{Author}
+Rasmus Pettersson Vik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+juni 2013 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_board_a469583fc5c99cd2aa4c6b6bd1250743b}{\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection[{Board}]{\setlength{\rightskip}{0pt plus 5cm}Board\-::\-Board (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_board_a469583fc5c99cd2aa4c6b6bd1250743b}
+
+
+Default \hyperlink{class_board}{Board} constructor. 
+
+Initialises board object with type of Board\-::\-Type\-::\-H\-N\-E\-F\-A\-T\-A\-F\-L and adds tiles to the tiles vector. \hyperlink{class_board}{Board} will be 11x11. Loads starting positions from starting\-Pos/hnefatafl.\-txt and adds pieces. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_board_a469583fc5c99cd2aa4c6b6bd1250743b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_board_af67811d3be762bf75ebe5b2dc4b3070e}{\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection[{Board}]{\setlength{\rightskip}{0pt plus 5cm}Board\-::\-Board (
+\begin{DoxyParamCaption}
+\item[{const {\bf Board\-::\-Type}}]{type = {\ttfamily Board\-:\-:Type\-:\-:HNEFATAFL}}
+\end{DoxyParamCaption}
+)}}\label{class_board_af67811d3be762bf75ebe5b2dc4b3070e}
+
+
+\hyperlink{class_board}{Board} constructor with setting of boardtype. 
+
+Initialises board object with type of \hyperlink{class_board_a7a90fdd0f301fc502684108416605644}{Board\-::\-Type} and loads corresponding starting positions and adds tiles and pieces. 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_board_af67811d3be762bf75ebe5b2dc4b3070e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_board_a4dd030ffcb9abc165ace3734e34dd26f}{\index{Board@{Board}!get\-Tile@{get\-Tile}}
+\index{get\-Tile@{get\-Tile}!Board@{Board}}
+\subsubsection[{get\-Tile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tile}$\ast$ Board\-::get\-Tile (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Vector2$<$ int $>$}]{pos}
+\end{DoxyParamCaption}
+)}}\label{class_board_a4dd030ffcb9abc165ace3734e34dd26f}
+
+
+Returns a pointer to the tile at position pos. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pos} & Position to tile on board. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to the tile at given position. If pos is less than 0 or greater than \hyperlink{class_board_a84aaf6583d8b174ef864dc774979b1a2}{Board.\-size()} function returns nullptr. 
+\end{DoxyReturn}
+\hypertarget{class_board_a7954dc515c68c3d8926355b1c80cc05f}{\index{Board@{Board}!load\-Board@{load\-Board}}
+\index{load\-Board@{load\-Board}!Board@{Board}}
+\subsubsection[{load\-Board}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::load\-Board (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{class_board_a7954dc515c68c3d8926355b1c80cc05f}
+
+
+Loads piece positions from file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & File to load positions from. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_board_a57a4317cebaae4f6879856262cf9caae}{\index{Board@{Board}!operator=@{operator=}}
+\index{operator=@{operator=}!Board@{Board}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} \& Board\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Board} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{class_board_a57a4317cebaae4f6879856262cf9caae}
+
+
+\hyperlink{class_board}{Board} assignment operator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & Source to copy from \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_board_a67c2acd87290a3359c8244a4cb72b380}{\index{Board@{Board}!save\-Board@{save\-Board}}
+\index{save\-Board@{save\-Board}!Board@{Board}}
+\subsubsection[{save\-Board}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::save\-Board (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{class_board_a67c2acd87290a3359c8244a4cb72b380}
+
+
+Saves piece positions to file path. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em path} & File to save positions to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_board_a2cf2b2f6adc453bc3b086c9f10c77e11}{\index{Board@{Board}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Board@{Board}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Board\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_board_a2cf2b2f6adc453bc3b086c9f10c77e11}
+
+
+Gets information about the current piece. 
+
+\begin{DoxyReturn}{Returns}
+Returns the type and position of the piece in a human readable format. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_printable_a489f74384330f76d048d1ccf5c541571}{Printable}.
+
+\hypertarget{class_board_a05a3dd8f1f000e20e743e894163228ec}{\index{Board@{Board}!type@{type}}
+\index{type@{type}!Board@{Board}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}void Board\-::type (
+\begin{DoxyParamCaption}
+\item[{const {\bf Board\-::\-Type} \&}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_board_a05a3dd8f1f000e20e743e894163228ec}
+
+
+Sets the type of the board. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em type} & The type of the board \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_board_a05a3dd8f1f000e20e743e894163228ec_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_board_ab2574abe1bfa632795d2b35ba1acb2e4}{\index{Board@{Board}!type@{type}}
+\index{type@{type}!Board@{Board}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Board\-::\-Type} \& Board\-::type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_board_ab2574abe1bfa632795d2b35ba1acb2e4}
+
+
+Gets the type of the board. 
+
+\begin{DoxyReturn}{Returns}
+Returns the type of the board 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_board_ab2574abe1bfa632795d2b35ba1acb2e4_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Hnefatafl/\hyperlink{_board_8hpp}{Board.\-hpp}\item 
+Hnefatafl/Board.\-cpp\end{DoxyCompactItemize}

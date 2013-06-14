@@ -1,0 +1,115 @@
+\hypertarget{class_serializable}{\section{Serializable Class Reference}
+\label{class_serializable}\index{Serializable@{Serializable}}
+}
+
+
+Interface for serializing classes to J\-S\-O\-N.  
+
+
+
+
+{\ttfamily \#include $<$Serializable.\-hpp$>$}
+
+
+
+Inheritance diagram for Serializable\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_serializable__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_serializable_a3d7322ec8a0db1573bcabe1590723e31}{virtual \hyperlink{class_serializable_a3d7322ec8a0db1573bcabe1590723e31}{$\sim$\-Serializable} (void)}\label{class_serializable_a3d7322ec8a0db1573bcabe1590723e31}
+
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_serializable_aa18caa72dd5e441647f86cc7aab62096}{serialize} (Json\-::\-Value \&root)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to serialize a class. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_serializable_ab423aaa267b7a0c7ad829128acde757c}{de\-Serialize} (Json\-::\-Value \&root)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to deserialize a class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for serializing classes to J\-S\-O\-N. 
+
+\begin{DoxyAuthor}{Author}
+Rasmus Pettersson Vik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+juni 2013 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_serializable_ab423aaa267b7a0c7ad829128acde757c}{\index{Serializable@{Serializable}!de\-Serialize@{de\-Serialize}}
+\index{de\-Serialize@{de\-Serialize}!Serializable@{Serializable}}
+\subsubsection[{de\-Serialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serializable\-::de\-Serialize (
+\begin{DoxyParamCaption}
+\item[{Json\-::\-Value \&}]{root}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_serializable_ab423aaa267b7a0c7ad829128acde757c}
+
+
+Pure virtual function to deserialize a class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em root} & ... \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_board_a40f5300d8b4d641d3123a6e9c3a49a45}{Board}, \hyperlink{class_tile_aac6ff96901aa89ac87b1a8385dc6444d}{Tile}, and \hyperlink{class_piece_a51f5d80dc3584e372d356ebfc281a886}{Piece}.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serializable_ab423aaa267b7a0c7ad829128acde757c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_serializable_aa18caa72dd5e441647f86cc7aab62096}{\index{Serializable@{Serializable}!serialize@{serialize}}
+\index{serialize@{serialize}!Serializable@{Serializable}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Serializable\-::serialize (
+\begin{DoxyParamCaption}
+\item[{Json\-::\-Value \&}]{root}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_serializable_aa18caa72dd5e441647f86cc7aab62096}
+
+
+Pure virtual function to serialize a class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em root} & ... \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_board_ab0459595994fae0457f0cf58cd6096a1}{Board}, \hyperlink{class_tile_a236311185e4c94d0ceb21bb6d122c4f8}{Tile}, and \hyperlink{class_piece_ae2397428f87d0303ede94fa91fef5ea5}{Piece}.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_serializable_aa18caa72dd5e441647f86cc7aab62096_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Hnefatafl/\hyperlink{_serializable_8hpp}{Serializable.\-hpp}\end{DoxyCompactItemize}

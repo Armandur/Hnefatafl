@@ -8,6 +8,7 @@
  */
 
 #include <sstream>
+#include <json/json.h>
 
 #include "Tile.hpp"
 
@@ -84,6 +85,52 @@ std::string Tile::toString()
 	ss << std::endl;
 
 	return ss.str();
+}
+
+void Tile::serialize(Json::Value& root)
+{
+	root["posX"] = this->position().x;
+	root["posY"] = this->position().y;
+
+	switch(_type)
+	{
+		case Tile::Type::EMPTY :
+				root["type"] = "empty";
+			break;
+		case Tile::Type::CORNER :
+				root["type"] = "corner";
+			break;
+		case Tile::Type::THRONE :
+				root["type"] = "throne";
+			break;
+		default:
+				root["type"] = "undefined";
+			break;
+	}
+}
+
+void Tile::deSerialize(Json::Value& root)
+{
+	this->position(sf::Vector2<int>(root.get("posX", -1).asInt(), root.get("posY", -1).asInt()));
+
+	std::string type = root.get("type", "").asString();
+
+	if(type == "empty")
+	{
+		this->type(Tile::Type::EMPTY);
+	}
+	else if(type == "corner")
+	{
+		this->type(Tile::Type::CORNER);
+	}
+	else if(type == "throne")
+	{
+		this->type(Tile::Type::THRONE);
+	}
+	else
+	{
+		this->type(Tile::Type::EMPTY);
+	}
 }
 
 void Tile::_init()

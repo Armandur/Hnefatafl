@@ -84,6 +84,52 @@ std::string Piece::toString()
 	return ss.str();
 }
 
+void Piece::serialize(Json::Value& root)
+{
+	root["posX"] = this->position().x;
+	root["posY"] = this->position().y;
+	
+	switch(_type)
+	{
+		case Piece::Type::BLACK :
+				root["type"] = "black";
+			break;
+		case Piece::Type::WHITE :
+				root["type"] = "white";
+			break;
+		case Piece::Type::KING :
+				root["type"] = "king";
+			break;
+		default:
+				root["type"] = "undefined";
+			break;
+	}
+}
+
+void Piece::deSerialize(Json::Value& root)
+{
+	this->position(sf::Vector2<int>(root.get("posX", -1).asInt(), root.get("posY", -1).asInt()));
+
+	std::string type = root.get("type", "").asString();
+
+	if(type == "black")
+	{
+		this->type(Piece::Type::BLACK);
+	}
+	else if(type == "white")
+	{
+		this->type(Piece::Type::WHITE);
+	}
+	else if(type == "king")
+	{
+		this->type(Piece::Type::KING);
+	}
+	else
+	{
+		this->type(Piece::Type::BLACK);
+	}
+}
+
 void Piece::_init()
 {
 

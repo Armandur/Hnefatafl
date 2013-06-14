@@ -1,4 +1,6 @@
 <map id="BoardEntity::position" name="BoardEntity::position">
-<area shape="rect" id="node3" href="$class_piece.html#a97dfab7bb313f6e94eb23d4b8736bdac" title="Piece copy constructor." alt="" coords="197,5,293,32"/>
-<area shape="rect" id="node5" href="$class_tile.html#a43886ac5f7fbcc05b5c26e34371ec599" title="Tile copy constructor." alt="" coords="210,56,281,83"/>
+<area shape="rect" id="node3" href="$class_piece.html#a97dfab7bb313f6e94eb23d4b8736bdac" title="Piece copy constructor." alt="" coords="209,5,305,32"/>
+<area shape="rect" id="node5" href="$class_piece.html#a8b059420684d0bf0ed7cde80b42a6286" title="Piece assignment operator." alt="" coords="198,56,317,83"/>
+<area shape="rect" id="node7" href="$class_tile.html#a43886ac5f7fbcc05b5c26e34371ec599" title="Tile copy constructor." alt="" coords="222,107,293,133"/>
+<area shape="rect" id="node9" href="$class_tile.html#a2e2c020a03afc0cdbe98170a05066d9a" title="Tile assignment operator." alt="" coords="205,157,310,184"/>
 </map>

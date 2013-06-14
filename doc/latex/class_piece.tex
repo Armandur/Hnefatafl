@@ -12,20 +12,22 @@ Describes a piece on the gameboard.
 
 
 
-Inheritance diagram for Piece\-:\nopagebreak
+Inheritance diagram for Piece\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=221pt]{class_piece__inherit__graph}
+\includegraphics[width=306pt]{class_piece__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Piece\-:\nopagebreak
+Collaboration diagram for Piece\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=221pt]{class_piece__coll__graph}
+\includegraphics[width=306pt]{class_piece__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
@@ -49,12 +51,20 @@ enum \hyperlink{class_piece_abcd044975b3657962abfd2ded9194b09}{Type} \{ {\bfseri
 \hypertarget{class_piece_ad28316e726ffa96f258a79ea90e41d16}{\hyperlink{class_piece_ad28316e726ffa96f258a79ea90e41d16}{$\sim$\-Piece} (void)}\label{class_piece_ad28316e726ffa96f258a79ea90e41d16}
 
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_piece}{Piece} destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_piece}{Piece} \& \hyperlink{class_piece_a8b059420684d0bf0ed7cde80b42a6286}{operator=} (const \hyperlink{class_piece}{Piece} \&rhs)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_piece}{Piece} assignment operator. \end{DoxyCompactList}\item 
 void \hyperlink{class_piece_ad41386c09d8ca34799398a2c11036cce}{type} (const \hyperlink{class_piece_abcd044975b3657962abfd2ded9194b09}{Piece\-::\-Type} \&type)
 \begin{DoxyCompactList}\small\item\em Sets the type of the piece. \end{DoxyCompactList}\item 
 const \hyperlink{class_piece_abcd044975b3657962abfd2ded9194b09}{Piece\-::\-Type} \& \hyperlink{class_piece_a64d970cf7c3d34014d8a36cc3bd3c908}{type} () const 
 \begin{DoxyCompactList}\small\item\em Gets the type of the piece. \end{DoxyCompactList}\item 
 std\-::string \hyperlink{class_piece_ae18523c400cb72a50bb1293d27cd1432}{to\-String} ()
-\begin{DoxyCompactList}\small\item\em Gets information about the current piece. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets information about the current piece. \end{DoxyCompactList}\item 
+\hypertarget{class_piece_ae2397428f87d0303ede94fa91fef5ea5}{void \hyperlink{class_piece_ae2397428f87d0303ede94fa91fef5ea5}{serialize} (Json\-::\-Value \&root)}\label{class_piece_ae2397428f87d0303ede94fa91fef5ea5}
+
+\begin{DoxyCompactList}\small\item\em Serialize the object to J\-S\-O\-N. \end{DoxyCompactList}\item 
+\hypertarget{class_piece_a51f5d80dc3584e372d356ebfc281a886}{void \hyperlink{class_piece_a51f5d80dc3584e372d356ebfc281a886}{de\-Serialize} (Json\-::\-Value \&root)}\label{class_piece_a51f5d80dc3584e372d356ebfc281a886}
+
+\begin{DoxyCompactList}\small\item\em Deserialize the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -88,8 +98,7 @@ juni 2013
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -110,7 +119,7 @@ Here is the call graph for this function\-:
 
 \hyperlink{class_piece}{Piece} constructor with position and type. 
 
-Initialises tile object with the position pos and default type of Piece\-::\-Type\-::\-B\-L\-A\-C\-K.
+Initializes tile object with the position pos and default type of Piece\-::\-Type\-::\-B\-L\-A\-C\-K.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -121,8 +130,7 @@ Initialises tile object with the position pos and default type of Piece\-::\-Typ
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -134,6 +142,33 @@ Here is the call graph for this function\-:
 
 
 \subsection{Member Function Documentation}
+\hypertarget{class_piece_a8b059420684d0bf0ed7cde80b42a6286}{\index{Piece@{Piece}!operator=@{operator=}}
+\index{operator=@{operator=}!Piece@{Piece}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} \& Piece\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Piece} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{class_piece_a8b059420684d0bf0ed7cde80b42a6286}
+
+
+\hyperlink{class_piece}{Piece} assignment operator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & Source to copy from \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_piece_a8b059420684d0bf0ed7cde80b42a6286_cgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_piece_ae18523c400cb72a50bb1293d27cd1432}{\index{Piece@{Piece}!to\-String@{to\-String}}
 \index{to\-String@{to\-String}!Piece@{Piece}}
 \subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Piece\-::to\-String (
@@ -185,7 +220,7 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=254pt]{class_piece_ad41386c09d8ca34799398a2c11036cce_icgraph}
+\includegraphics[width=272pt]{class_piece_ad41386c09d8ca34799398a2c11036cce_icgraph}
 \end{center}
 \end{figure}
 
@@ -206,7 +241,8 @@ Returns the type of the piece
 \end{DoxyReturn}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -219,5 +255,5 @@ Here is the caller graph for this function\-:\nopagebreak
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/git ws/\-Hnefatafl/\-Hnefatafl/\hyperlink{_piece_8hpp}{Piece.\-hpp}\item 
-D\-:/git ws/\-Hnefatafl/\-Hnefatafl/\hyperlink{_piece_8cpp}{Piece.\-cpp}\end{DoxyCompactItemize}
+Hnefatafl/\hyperlink{_piece_8hpp}{Piece.\-hpp}\item 
+Hnefatafl/\hyperlink{_piece_8cpp}{Piece.\-cpp}\end{DoxyCompactItemize}

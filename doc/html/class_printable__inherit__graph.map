@@ -1,4 +1,5 @@
 <map id="Printable" name="Printable">
-<area shape="rect" id="node3" href="$class_piece.html" title="Describes a piece on the gameboard." alt="" coords="5,80,59,107"/>
-<area shape="rect" id="node5" href="$class_tile.html" title="Describes a tile on the gameboard." alt="" coords="84,80,127,107"/>
+<area shape="rect" id="node3" href="$class_board.html" title="Defines a board for Hnefatafl." alt="" coords="5,80,61,107"/>
+<area shape="rect" id="node5" href="$class_piece.html" title="Describes a piece on the gameboard." alt="" coords="86,80,140,107"/>
+<area shape="rect" id="node7" href="$class_tile.html" title="Describes a tile on the gameboard." alt="" coords="165,80,208,107"/>
 </map>

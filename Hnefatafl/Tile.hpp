@@ -13,6 +13,7 @@
 #include <SFML/System.hpp>
 #include "BoardEntity.hpp"
 #include "Printable.hpp"
+#include "Serializable.hpp"
 
 /*!
  * \class Tile
@@ -22,7 +23,7 @@
  * \author Rasmus Pettersson Vik
  * \date juni 2013
  */
-class Tile :  public BoardEntity, public Printable
+class Tile :  public BoardEntity, public Printable, public Serializable
 {
 	public:
 		//! Different types of Tiles
@@ -43,7 +44,7 @@ class Tile :  public BoardEntity, public Printable
 		/*!
 		 * \brief Tile constructor with position and type
 		 *
-		 * Initialises tile object with the position pos and default
+		 * Initializes tile object with the position pos and default
 		 * type of Tile::Type::EMPTY.
 		 *
 		 * \param[in] pos The position to set the tile to.
@@ -80,9 +81,19 @@ class Tile :  public BoardEntity, public Printable
 		 */
 		std::string toString();
 
+		/*!
+		 * \brief Serialize the object to JSON
+		 */
+		void serialize(Json::Value& root);
+
+		/*!
+		 * \brief Deserialize the object
+		 */
+		void deSerialize(Json::Value& root);
+
 	private:
 
-		/*! Initialising function
+		/*! Initializing function
 		 * \note Should be run in every constructor!
 		 */
 		void _init();

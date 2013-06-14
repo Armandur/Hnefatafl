@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Hnefatafl
-   &#160;<span id="projectnumber">0.0.1</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Implementation of Viking boardgame Hnefatafl</div>
   </td>
@@ -100,14 +100,14 @@ Inheritance diagram for Tile:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_tile__inherit__graph.png" border="0" usemap="#_tile_inherit__map" alt="Inheritance graph"/></div>
 <map name="_tile_inherit__map" id="_tile_inherit__map">
-<area shape="rect" id="node2" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard." alt="" coords="5,5,96,32"/><area shape="rect" id="node4" href="class_printable.html" title="Abstract class implementing std::string toString() functionality." alt="" coords="121,5,193,32"/></map>
+<area shape="rect" id="node2" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard." alt="" coords="5,5,96,32"/><area shape="rect" id="node4" href="class_printable.html" title="Abstract class implementing std::string toString() functionality." alt="" coords="121,5,193,32"/><area shape="rect" id="node6" href="class_serializable.html" title="Interface for serializing classes to JSON." alt="" coords="218,5,307,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for Tile:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_tile__coll__graph.png" border="0" usemap="#_tile_coll__map" alt="Collaboration graph"/></div>
 <map name="_tile_coll__map" id="_tile_coll__map">
-<area shape="rect" id="node2" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard." alt="" coords="5,5,96,32"/><area shape="rect" id="node4" href="class_printable.html" title="Abstract class implementing std::string toString() functionality." alt="" coords="121,5,193,32"/></map>
+<area shape="rect" id="node2" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard." alt="" coords="5,5,96,32"/><area shape="rect" id="node4" href="class_printable.html" title="Abstract class implementing std::string toString() functionality." alt="" coords="121,5,193,32"/><area shape="rect" id="node6" href="class_serializable.html" title="Interface for serializing classes to JSON." alt="" coords="218,5,307,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -135,6 +135,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile.html#a98634abbd93fa13d0578d7103202d03d">~Tile</a> ()</td></tr>
 <tr class="memdesc:a98634abbd93fa13d0578d7103202d03d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_tile.html" title="Describes a tile on the gameboard.">Tile</a> Destructor. <br/></td></tr>
 <tr class="separator:a98634abbd93fa13d0578d7103202d03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2c020a03afc0cdbe98170a05066d9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tile.html">Tile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile.html#a2e2c020a03afc0cdbe98170a05066d9a">operator=</a> (const <a class="el" href="class_tile.html">Tile</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a2e2c020a03afc0cdbe98170a05066d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_tile.html" title="Describes a tile on the gameboard.">Tile</a> assignment operator.  <a href="#a2e2c020a03afc0cdbe98170a05066d9a"></a><br/></td></tr>
+<tr class="separator:a2e2c020a03afc0cdbe98170a05066d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6644c418cbb05f4af1bb0bae756a96f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile.html#af6644c418cbb05f4af1bb0bae756a96f">type</a> (const <a class="el" href="class_tile.html#afa5ef05a7f2ea1f3e44398c001abc738">Tile::Type</a> &amp;type)</td></tr>
 <tr class="memdesc:af6644c418cbb05f4af1bb0bae756a96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type of the tile.  <a href="#af6644c418cbb05f4af1bb0bae756a96f"></a><br/></td></tr>
 <tr class="separator:af6644c418cbb05f4af1bb0bae756a96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +147,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acc5f775cb013360f669f5043cbf60cb2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile.html#acc5f775cb013360f669f5043cbf60cb2">toString</a> ()</td></tr>
 <tr class="memdesc:acc5f775cb013360f669f5043cbf60cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets information about the current tile.  <a href="#acc5f775cb013360f669f5043cbf60cb2"></a><br/></td></tr>
 <tr class="separator:acc5f775cb013360f669f5043cbf60cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236311185e4c94d0ceb21bb6d122c4f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a236311185e4c94d0ceb21bb6d122c4f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile.html#a236311185e4c94d0ceb21bb6d122c4f8">serialize</a> (Json::Value &amp;root)</td></tr>
+<tr class="memdesc:a236311185e4c94d0ceb21bb6d122c4f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the object to JSON. <br/></td></tr>
+<tr class="separator:a236311185e4c94d0ceb21bb6d122c4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6ff96901aa89ac87b1a8385dc6444d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac6ff96901aa89ac87b1a8385dc6444d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tile.html#aac6ff96901aa89ac87b1a8385dc6444d">deSerialize</a> (Json::Value &amp;root)</td></tr>
+<tr class="memdesc:aac6ff96901aa89ac87b1a8385dc6444d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize the object. <br/></td></tr>
+<tr class="separator:aac6ff96901aa89ac87b1a8385dc6444d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_board_entity"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_board_entity')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_board_entity.html">BoardEntity</a></td></tr>
 <tr class="memitem:a809e46488b5db0ca8940176296548d4c inherit pub_methods_class_board_entity"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a809e46488b5db0ca8940176296548d4c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board_entity.html#a809e46488b5db0ca8940176296548d4c">BoardEntity</a> (void)</td></tr>
@@ -159,6 +170,11 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:aef7592bf7ad04fb47402cbbea5fac723 inherit pub_methods_class_board_entity"><td class="memItemLeft" align="right" valign="top">const sf::Vector2&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_board_entity.html#aef7592bf7ad04fb47402cbbea5fac723">position</a> () const </td></tr>
 <tr class="memdesc:aef7592bf7ad04fb47402cbbea5fac723 inherit pub_methods_class_board_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position of the <a class="el" href="class_board_entity.html" title="Abstract baseclass for an entity with a position on the gameboard.">BoardEntity</a>.  <a href="#aef7592bf7ad04fb47402cbbea5fac723"></a><br/></td></tr>
 <tr class="separator:aef7592bf7ad04fb47402cbbea5fac723 inherit pub_methods_class_board_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_serializable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_serializable.html">Serializable</a></td></tr>
+<tr class="memitem:a3d7322ec8a0db1573bcabe1590723e31 inherit pub_methods_class_serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d7322ec8a0db1573bcabe1590723e31"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serializable.html#a3d7322ec8a0db1573bcabe1590723e31">~Serializable</a> (void)</td></tr>
+<tr class="memdesc:a3d7322ec8a0db1573bcabe1590723e31 inherit pub_methods_class_serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br/></td></tr>
+<tr class="separator:a3d7322ec8a0db1573bcabe1590723e31 inherit pub_methods_class_serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -231,7 +247,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_tile.html" title="Describes a tile on the gameboard.">Tile</a> constructor with position and type. </p>
-<p>Initialises tile object with the position pos and default type of Tile::Type::EMPTY.</p>
+<p>Initializes tile object with the position pos and default type of Tile::Type::EMPTY.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pos</td><td>The position to set the tile to. </td></tr>
@@ -252,6 +268,39 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a2e2c020a03afc0cdbe98170a05066d9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tile.html">Tile</a> &amp; Tile::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_tile.html">Tile</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_tile.html" title="Describes a tile on the gameboard.">Tile</a> assignment operator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>Source to copy from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_tile_a2e2c020a03afc0cdbe98170a05066d9a_cgraph.png" border="0" usemap="#class_tile_a2e2c020a03afc0cdbe98170a05066d9a_cgraph" alt=""/></div>
+<map name="class_tile_a2e2c020a03afc0cdbe98170a05066d9a_cgraph" id="class_tile_a2e2c020a03afc0cdbe98170a05066d9a_cgraph">
+<area shape="rect" id="node3" href="class_board_entity.html#aef7592bf7ad04fb47402cbbea5fac723" title="Gets the position of the BoardEntity." alt="" coords="161,5,303,32"/><area shape="rect" id="node5" href="class_tile.html#a816fb8e2d8d48619eccf6e225eca7206" title="Get the type of the tile." alt="" coords="195,56,269,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="acc5f775cb013360f669f5043cbf60cb2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -316,7 +365,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_tile_af6644c418cbb05f4af1bb0bae756a96f_icgraph.png" border="0" usemap="#class_tile_af6644c418cbb05f4af1bb0bae756a96f_icgraph" alt=""/></div>
 <map name="class_tile_af6644c418cbb05f4af1bb0bae756a96f_icgraph" id="class_tile_af6644c418cbb05f4af1bb0bae756a96f_icgraph">
-<area shape="rect" id="node3" href="class_tile.html#a43886ac5f7fbcc05b5c26e34371ec599" title="Tile copy constructor." alt="" coords="129,5,199,32"/></map>
+<area shape="rect" id="node3" href="class_tile.html#a43886ac5f7fbcc05b5c26e34371ec599" title="Tile copy constructor." alt="" coords="146,5,217,32"/><area shape="rect" id="node5" href="class_tile.html#a2e2c020a03afc0cdbe98170a05066d9a" title="Tile assignment operator." alt="" coords="129,56,234,83"/></map>
 </div>
 </p>
 
@@ -343,20 +392,20 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_tile_a816fb8e2d8d48619eccf6e225eca7206_icgraph.png" border="0" usemap="#class_tile_a816fb8e2d8d48619eccf6e225eca7206_icgraph" alt=""/></div>
 <map name="class_tile_a816fb8e2d8d48619eccf6e225eca7206_icgraph" id="class_tile_a816fb8e2d8d48619eccf6e225eca7206_icgraph">
-<area shape="rect" id="node3" href="class_tile.html#a93fdcc8c693044a3bb3590bdb6daed2a" title="Default Tile Constructor Initialises tile object with Tile::Type::EMPTY and position &#45;1..." alt="" coords="130,5,201,32"/><area shape="rect" id="node5" href="class_tile.html#af6644c418cbb05f4af1bb0bae756a96f" title="Set the type of the tile." alt="" coords="128,56,203,83"/><area shape="rect" id="node7" href="class_tile.html#a43886ac5f7fbcc05b5c26e34371ec599" title="Tile copy constructor." alt="" coords="251,56,322,83"/></map>
+<area shape="rect" id="node3" href="class_tile.html#a93fdcc8c693044a3bb3590bdb6daed2a" title="Default Tile Constructor Initialises tile object with Tile::Type::EMPTY and position &#45;1..." alt="" coords="150,5,221,32"/><area shape="rect" id="node5" href="class_tile.html#a2e2c020a03afc0cdbe98170a05066d9a" title="Tile assignment operator." alt="" coords="291,56,397,83"/><area shape="rect" id="node7" href="class_tile.html#af6644c418cbb05f4af1bb0bae756a96f" title="Set the type of the tile." alt="" coords="148,107,223,133"/><area shape="rect" id="node12" href="class_tile.html#aac6ff96901aa89ac87b1a8385dc6444d" title="Deserialize the object." alt="" coords="128,157,243,184"/><area shape="rect" id="node9" href="class_tile.html#a43886ac5f7fbcc05b5c26e34371ec599" title="Tile copy constructor." alt="" coords="309,107,379,133"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/git ws/Hnefatafl/Hnefatafl/<a class="el" href="_tile_8hpp_source.html">Tile.hpp</a></li>
-<li>D:/git ws/Hnefatafl/Hnefatafl/<a class="el" href="_tile_8cpp.html">Tile.cpp</a></li>
+<li>Hnefatafl/<a class="el" href="_tile_8hpp_source.html">Tile.hpp</a></li>
+<li>Hnefatafl/<a class="el" href="_tile_8cpp.html">Tile.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 14 2013 00:59:35 for Hnefatafl by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 14 2013 14:00:06 for Hnefatafl by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

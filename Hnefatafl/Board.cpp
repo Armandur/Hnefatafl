@@ -1,6 +1,7 @@
 #include <vector>
 #include <sstream>
 #include <fstream>
+#include <json/json.h>
 
 #include "Board.hpp"
 #include "Tile.hpp"
@@ -31,6 +32,11 @@ Board::Board(const Board::Type type/*=Board::Type::HNEFATAFL*/)
 {
 	this->type(type);
 	this->loadBoard();
+}
+
+Board::~Board(void)
+{
+
 }
 
 Board& Board::operator=(const Board& rhs)
@@ -93,4 +99,14 @@ std::string Board::toString()
 const int& Board::size() const
 {
 	return this->_size;
+}
+
+void Board::serialize(Json::Value& root)
+{
+	
+}
+
+void Board::deSerialize(Json::Value& root)
+{
+	
 }

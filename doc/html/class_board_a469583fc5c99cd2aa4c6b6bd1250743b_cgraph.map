@@ -1,0 +1,4 @@
+<map id="Board::Board" name="Board::Board">
+<area shape="rect" id="node3" href="$class_board.html#ab2574abe1bfa632795d2b35ba1acb2e4" title="Gets the type of the board." alt="" coords="169,5,258,32"/>
+<area shape="rect" id="node5" href="$class_board.html#af7b2ac390d5b62212f7b0ba98276e837" title="Loads piece positions based on current type." alt="" coords="152,56,275,83"/>
+</map>

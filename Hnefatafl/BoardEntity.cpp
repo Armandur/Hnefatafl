@@ -15,12 +15,10 @@ BoardEntity::BoardEntity(void)
 	this->position(sf::Vector2<int>(-1, -1));
 }
 
-
 BoardEntity::~BoardEntity(void)
 {
 
 }
-
 
 void BoardEntity::position(const sf::Vector2<int>& pos)
 {

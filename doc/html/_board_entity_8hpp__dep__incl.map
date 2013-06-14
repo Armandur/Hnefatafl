@@ -1,7 +1,8 @@
-<map id="D:/git ws/Hnefatafl/Hnefatafl/BoardEntity.hpp" name="D:/git ws/Hnefatafl/Hnefatafl/BoardEntity.hpp">
-<area shape="rect" id="node3" href="$_tile_8hpp.html" title="D:/git ws/Hnefatafl\l/Hnefatafl/Tile.hpp" alt="" coords="5,97,131,138"/>
-<area shape="rect" id="node7" href="$_piece_8hpp.html" title="D:/git ws/Hnefatafl\l/Hnefatafl/Piece.hpp" alt="" coords="156,97,295,138"/>
-<area shape="rect" id="node11" href="$_board_entity_8cpp.html" title="D:/git ws/Hnefatafl\l/Hnefatafl/BoardEntity.cpp" alt="" coords="319,97,492,138"/>
-<area shape="rect" id="node5" href="$_tile_8cpp.html" title="D:/git ws/Hnefatafl\l/Hnefatafl/Tile.cpp" alt="" coords="5,187,131,229"/>
-<area shape="rect" id="node9" href="$_piece_8cpp.html" title="D:/git ws/Hnefatafl\l/Hnefatafl/Piece.cpp" alt="" coords="156,187,295,229"/>
+<map id="Hnefatafl/BoardEntity.hpp" name="Hnefatafl/BoardEntity.hpp">
+<area shape="rect" id="node3" href="$_tile_8hpp.html" title="Hnefatafl/Tile.hpp" alt="" coords="163,80,284,107"/>
+<area shape="rect" id="node9" href="$_piece_8hpp.html" title="Hnefatafl/Piece.hpp" alt="" coords="309,80,443,107"/>
+<area shape="rect" id="node13" href="$_board_entity_8cpp.html" title="Hnefatafl/BoardEntity.cpp" alt="" coords="467,80,636,107"/>
+<area shape="rect" id="node5" href="$_board_8hpp.html" title="Hnefatafl/Board.hpp" alt="" coords="5,155,139,181"/>
+<area shape="rect" id="node7" href="$_tile_8cpp.html" title="Hnefatafl/Tile.cpp" alt="" coords="163,155,284,181"/>
+<area shape="rect" id="node11" href="$_piece_8cpp.html" title="Hnefatafl/Piece.cpp" alt="" coords="309,155,443,181"/>
 </map>

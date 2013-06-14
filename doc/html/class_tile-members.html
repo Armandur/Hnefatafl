@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Hnefatafl
-   &#160;<span id="projectnumber">0.0.1</span>
+   &#160;<span id="projectnumber">0.1.0</span>
    </div>
    <div id="projectbrief">Implementation of Viking boardgame Hnefatafl</div>
   </td>
@@ -92,23 +92,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="class_board_entity.html#a2c4f3a3dbd1aa78abc228ce86d109303">_position</a></td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_board_entity.html#a809e46488b5db0ca8940176296548d4c">BoardEntity</a>(void)</td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>CORNER</b> enum value (defined in <a class="el" href="class_tile.html">Tile</a>)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>EMPTY</b> enum value (defined in <a class="el" href="class_tile.html">Tile</a>)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_tile.html#aac6ff96901aa89ac87b1a8385dc6444d">deSerialize</a>(Json::Value &amp;root)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>EMPTY</b> enum value (defined in <a class="el" href="class_tile.html">Tile</a>)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_tile.html#a2e2c020a03afc0cdbe98170a05066d9a">operator=</a>(const Tile &amp;rhs)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_board_entity.html#a177b0ebff2150101415eb70b4fc677cb">position</a>(const sf::Vector2&lt; int &gt; &amp;pos)</td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_board_entity.html#aef7592bf7ad04fb47402cbbea5fac723">position</a>() const </td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>THRONE</b> enum value (defined in <a class="el" href="class_tile.html">Tile</a>)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_tile.html#a93fdcc8c693044a3bb3590bdb6daed2a">Tile</a>(void)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_tile.html#a43886ac5f7fbcc05b5c26e34371ec599">Tile</a>(const Tile &amp;src)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_tile.html#ab7a5adaebb9e705923681daf52f1db74">Tile</a>(const sf::Vector2&lt; int &gt; &amp;pos, const Tile::Type &amp;type=Tile::Type::EMPTY)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_tile.html#acc5f775cb013360f669f5043cbf60cb2">toString</a>()</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_tile.html#af6644c418cbb05f4af1bb0bae756a96f">type</a>(const Tile::Type &amp;type)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_tile.html#a816fb8e2d8d48619eccf6e225eca7206">type</a>() const </td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_tile.html#afa5ef05a7f2ea1f3e44398c001abc738">Type</a> enum name</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_board_entity.html#a5856127ebd5b45c32e745cca13b0775d">~BoardEntity</a>(void)</td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_tile.html#a236311185e4c94d0ceb21bb6d122c4f8">serialize</a>(Json::Value &amp;root)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>THRONE</b> enum value (defined in <a class="el" href="class_tile.html">Tile</a>)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_tile.html#a93fdcc8c693044a3bb3590bdb6daed2a">Tile</a>(void)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_tile.html#a43886ac5f7fbcc05b5c26e34371ec599">Tile</a>(const Tile &amp;src)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_tile.html#ab7a5adaebb9e705923681daf52f1db74">Tile</a>(const sf::Vector2&lt; int &gt; &amp;pos, const Tile::Type &amp;type=Tile::Type::EMPTY)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_tile.html#acc5f775cb013360f669f5043cbf60cb2">toString</a>()</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_tile.html#af6644c418cbb05f4af1bb0bae756a96f">type</a>(const Tile::Type &amp;type)</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_tile.html#a816fb8e2d8d48619eccf6e225eca7206">type</a>() const </td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_tile.html#afa5ef05a7f2ea1f3e44398c001abc738">Type</a> enum name</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_board_entity.html#a5856127ebd5b45c32e745cca13b0775d">~BoardEntity</a>(void)</td><td class="entry"><a class="el" href="class_board_entity.html">BoardEntity</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_serializable.html#a3d7322ec8a0db1573bcabe1590723e31">~Serializable</a>(void)</td><td class="entry"><a class="el" href="class_serializable.html">Serializable</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_tile.html#a98634abbd93fa13d0578d7103202d03d">~Tile</a>()</td><td class="entry"><a class="el" href="class_tile.html">Tile</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 14 2013 00:59:35 for Hnefatafl by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 14 2013 14:00:06 for Hnefatafl by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

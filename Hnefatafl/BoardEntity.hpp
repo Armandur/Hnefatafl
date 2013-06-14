@@ -45,7 +45,7 @@ class BoardEntity
 		const sf::Vector2<int>& position() const;
 
 	protected:
-		/*! Initialising function
+		/*! Initializing function
 		 * \note Should be run in every constructor!
 		 */
 		virtual void _init() =0;

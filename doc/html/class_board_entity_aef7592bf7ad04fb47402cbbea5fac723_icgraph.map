@@ -1,5 +1,11 @@
 <map id="BoardEntity::position" name="BoardEntity::position">
 <area shape="rect" id="node3" href="$class_board_entity.html#a809e46488b5db0ca8940176296548d4c" title="Default BoardEntity Constructor Runs _init() and initialises _position to (&#45;1, &#45;1)" alt="" coords="198,5,365,32"/>
 <area shape="rect" id="node5" href="$class_piece.html#a64870ec3fe38b7f88c802d91db861abb" title="Default Piece Constructor Initialises tile object with Piece::Type::Black and position &#45;1..." alt="" coords="233,56,329,83"/>
-<area shape="rect" id="node7" href="$class_tile.html#a93fdcc8c693044a3bb3590bdb6daed2a" title="Default Tile Constructor Initialises tile object with Tile::Type::EMPTY and position &#45;1..." alt="" coords="246,107,317,133"/>
+<area shape="rect" id="node7" href="$class_piece.html#a8b059420684d0bf0ed7cde80b42a6286" title="Piece assignment operator." alt="" coords="222,107,341,133"/>
+<area shape="rect" id="node9" href="$class_piece.html#ae2397428f87d0303ede94fa91fef5ea5" title="Serialize the object to JSON." alt="" coords="226,157,337,184"/>
+<area shape="rect" id="node11" href="$class_piece.html#a51f5d80dc3584e372d356ebfc281a886" title="Deserialize the object." alt="" coords="218,208,345,235"/>
+<area shape="rect" id="node13" href="$class_tile.html#a93fdcc8c693044a3bb3590bdb6daed2a" title="Default Tile Constructor Initialises tile object with Tile::Type::EMPTY and position &#45;1..." alt="" coords="246,259,317,285"/>
+<area shape="rect" id="node15" href="$class_tile.html#a2e2c020a03afc0cdbe98170a05066d9a" title="Tile assignment operator." alt="" coords="229,309,334,336"/>
+<area shape="rect" id="node17" href="$class_tile.html#a236311185e4c94d0ceb21bb6d122c4f8" title="Serialize the object to JSON." alt="" coords="232,360,331,387"/>
+<area shape="rect" id="node19" href="$class_tile.html#aac6ff96901aa89ac87b1a8385dc6444d" title="Deserialize the object." alt="" coords="224,411,339,437"/>
 </map>

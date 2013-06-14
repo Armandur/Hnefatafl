@@ -12,20 +12,22 @@ Describes a tile on the gameboard.
 
 
 
-Inheritance diagram for Tile\-:\nopagebreak
+Inheritance diagram for Tile\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=221pt]{class_tile__inherit__graph}
+\includegraphics[width=306pt]{class_tile__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Tile\-:\nopagebreak
+Collaboration diagram for Tile\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=221pt]{class_tile__coll__graph}
+\includegraphics[width=306pt]{class_tile__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
@@ -49,12 +51,20 @@ enum \hyperlink{class_tile_afa5ef05a7f2ea1f3e44398c001abc738}{Type} \{ {\bfserie
 \hypertarget{class_tile_a98634abbd93fa13d0578d7103202d03d}{\hyperlink{class_tile_a98634abbd93fa13d0578d7103202d03d}{$\sim$\-Tile} ()}\label{class_tile_a98634abbd93fa13d0578d7103202d03d}
 
 \begin{DoxyCompactList}\small\item\em \hyperlink{class_tile}{Tile} Destructor. \end{DoxyCompactList}\item 
+\hyperlink{class_tile}{Tile} \& \hyperlink{class_tile_a2e2c020a03afc0cdbe98170a05066d9a}{operator=} (const \hyperlink{class_tile}{Tile} \&rhs)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_tile}{Tile} assignment operator. \end{DoxyCompactList}\item 
 void \hyperlink{class_tile_af6644c418cbb05f4af1bb0bae756a96f}{type} (const \hyperlink{class_tile_afa5ef05a7f2ea1f3e44398c001abc738}{Tile\-::\-Type} \&type)
 \begin{DoxyCompactList}\small\item\em Set the type of the tile. \end{DoxyCompactList}\item 
 const \hyperlink{class_tile_afa5ef05a7f2ea1f3e44398c001abc738}{Tile\-::\-Type} \& \hyperlink{class_tile_a816fb8e2d8d48619eccf6e225eca7206}{type} () const 
 \begin{DoxyCompactList}\small\item\em Get the type of the tile. \end{DoxyCompactList}\item 
 std\-::string \hyperlink{class_tile_acc5f775cb013360f669f5043cbf60cb2}{to\-String} ()
-\begin{DoxyCompactList}\small\item\em Gets information about the current tile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets information about the current tile. \end{DoxyCompactList}\item 
+\hypertarget{class_tile_a236311185e4c94d0ceb21bb6d122c4f8}{void \hyperlink{class_tile_a236311185e4c94d0ceb21bb6d122c4f8}{serialize} (Json\-::\-Value \&root)}\label{class_tile_a236311185e4c94d0ceb21bb6d122c4f8}
+
+\begin{DoxyCompactList}\small\item\em Serialize the object to J\-S\-O\-N. \end{DoxyCompactList}\item 
+\hypertarget{class_tile_aac6ff96901aa89ac87b1a8385dc6444d}{void \hyperlink{class_tile_aac6ff96901aa89ac87b1a8385dc6444d}{de\-Serialize} (Json\-::\-Value \&root)}\label{class_tile_aac6ff96901aa89ac87b1a8385dc6444d}
+
+\begin{DoxyCompactList}\small\item\em Deserialize the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -88,8 +98,7 @@ juni 2013
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -110,7 +119,7 @@ Here is the call graph for this function\-:
 
 \hyperlink{class_tile}{Tile} constructor with position and type. 
 
-Initialises tile object with the position pos and default type of Tile\-::\-Type\-::\-E\-M\-P\-T\-Y.
+Initializes tile object with the position pos and default type of Tile\-::\-Type\-::\-E\-M\-P\-T\-Y.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -121,8 +130,7 @@ Initialises tile object with the position pos and default type of Tile\-::\-Type
 \end{DoxyParams}
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -134,6 +142,33 @@ Here is the call graph for this function\-:
 
 
 \subsection{Member Function Documentation}
+\hypertarget{class_tile_a2e2c020a03afc0cdbe98170a05066d9a}{\index{Tile@{Tile}!operator=@{operator=}}
+\index{operator=@{operator=}!Tile@{Tile}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tile} \& Tile\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tile} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{class_tile_a2e2c020a03afc0cdbe98170a05066d9a}
+
+
+\hyperlink{class_tile}{Tile} assignment operator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em rhs} & Source to copy from \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_tile_a2e2c020a03afc0cdbe98170a05066d9a_cgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_tile_acc5f775cb013360f669f5043cbf60cb2}{\index{Tile@{Tile}!to\-String@{to\-String}}
 \index{to\-String@{to\-String}!Tile@{Tile}}
 \subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Tile\-::to\-String (
@@ -185,7 +220,7 @@ Here is the caller graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=226pt]{class_tile_af6644c418cbb05f4af1bb0bae756a96f_icgraph}
+\includegraphics[width=252pt]{class_tile_af6644c418cbb05f4af1bb0bae756a96f_icgraph}
 \end{center}
 \end{figure}
 
@@ -206,11 +241,12 @@ Returns the type of the tile.
 \end{DoxyReturn}
 
 
-Here is the caller graph for this function\-:\nopagebreak
+Here is the caller graph for this function\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=318pt]{class_tile_a816fb8e2d8d48619eccf6e225eca7206_icgraph}
+\includegraphics[width=350pt]{class_tile_a816fb8e2d8d48619eccf6e225eca7206_icgraph}
 \end{center}
 \end{figure}
 
@@ -219,5 +255,5 @@ Here is the caller graph for this function\-:\nopagebreak
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-D\-:/git ws/\-Hnefatafl/\-Hnefatafl/\hyperlink{_tile_8hpp}{Tile.\-hpp}\item 
-D\-:/git ws/\-Hnefatafl/\-Hnefatafl/\hyperlink{_tile_8cpp}{Tile.\-cpp}\end{DoxyCompactItemize}
+Hnefatafl/\hyperlink{_tile_8hpp}{Tile.\-hpp}\item 
+Hnefatafl/\hyperlink{_tile_8cpp}{Tile.\-cpp}\end{DoxyCompactItemize}

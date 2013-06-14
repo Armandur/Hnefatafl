@@ -1,0 +1,107 @@
+\hypertarget{class_serializer}{\section{Serializer Class Reference}
+\label{class_serializer}\index{Serializer@{Serializer}}
+}
+
+
+Static class to serializes a class that inherits \hyperlink{class_serializable}{Serializable}.  
+
+
+
+
+{\ttfamily \#include $<$Serializer.\-hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{class_serializer_abdb1edae5fe52a2241578bcadae9d265}{serialize} (\hyperlink{class_serializable}{Serializable} $\ast$obj, std\-::string \&output)
+\begin{DoxyCompactList}\small\item\em Serializes serializable object. \end{DoxyCompactList}\item 
+static bool \hyperlink{class_serializer_a8ee632af50c7ea6a208d3c279b1b39fc}{de\-Serialize} (\hyperlink{class_serializable}{Serializable} $\ast$obj, std\-::string \&input)
+\begin{DoxyCompactList}\small\item\em Deserializes serializable object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Static class to serializes a class that inherits \hyperlink{class_serializable}{Serializable}. 
+
+\begin{DoxyAuthor}{Author}
+Rasmus Pettersson Vik 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+juni 2013 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_serializer_a8ee632af50c7ea6a208d3c279b1b39fc}{\index{Serializer@{Serializer}!de\-Serialize@{de\-Serialize}}
+\index{de\-Serialize@{de\-Serialize}!Serializer@{Serializer}}
+\subsubsection[{de\-Serialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\-::de\-Serialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Serializable} $\ast$}]{obj, }
+\item[{std\-::string \&}]{input}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_serializer_a8ee632af50c7ea6a208d3c279b1b39fc}
+
+
+Deserializes serializable object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em obj} & The object to deserialize \\
+\hline
+\mbox{\tt in}  & {\em input} & The data to push to the object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serializer_a8ee632af50c7ea6a208d3c279b1b39fc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_serializer_abdb1edae5fe52a2241578bcadae9d265}{\index{Serializer@{Serializer}!serialize@{serialize}}
+\index{serialize@{serialize}!Serializer@{Serializer}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\-::serialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Serializable} $\ast$}]{obj, }
+\item[{std\-::string \&}]{output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_serializer_abdb1edae5fe52a2241578bcadae9d265}
+
+
+Serializes serializable object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em obj} & The object to serialize \\
+\hline
+\mbox{\tt out}  & {\em output} & Stores the output of the serialization \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True on success 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_serializer_abdb1edae5fe52a2241578bcadae9d265_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Hnefatafl/\hyperlink{_serializer_8hpp}{Serializer.\-hpp}\item 
+Hnefatafl/\hyperlink{_serializer_8cpp}{Serializer.\-cpp}\end{DoxyCompactItemize}

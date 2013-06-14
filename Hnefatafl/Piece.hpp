@@ -12,6 +12,7 @@
 #include <SFML/System.hpp>
 #include "BoardEntity.hpp"
 #include "Printable.hpp"
+#include "Serializable.hpp"
 
 /*!
  * \class Piece
@@ -21,7 +22,7 @@
  * \author Rasmus Pettersson Vik
  * \date juni 2013
  */
-class Piece : protected BoardEntity, protected Printable
+class Piece : public BoardEntity, public Printable, public Serializable
 {
 	public:
 		//! Different types of Pieces
@@ -42,7 +43,7 @@ class Piece : protected BoardEntity, protected Printable
 		/*!
 		 * \brief Piece constructor with position and type
 		 *
-		 * Initialises tile object with the position pos and default
+		 * Initializes tile object with the position pos and default
 		 * type of Piece::Type::BLACK.
 		 *
 		 * \param[in] pos The position to set the piece to.
@@ -78,7 +79,17 @@ class Piece : protected BoardEntity, protected Printable
 		 * readable format.
 		 */
 		std::string toString();
-	
+
+		/*!
+		 * \brief Serialize the object to JSON
+		 */
+		void serialize(Json::Value& root);
+
+		/*!
+		 * \brief Deserialize the object
+		 */
+		void deSerialize(Json::Value& root);
+
 	private:
 		/*! Initialising function
 		 * \note Should be run in every constructor!

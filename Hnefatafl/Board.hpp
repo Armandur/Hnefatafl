@@ -12,6 +12,7 @@
 
 #include "Printable.hpp"
 #include "Tile.hpp"
+#include "Serializable.hpp"
 
 /*!
  * \class Board
@@ -21,7 +22,7 @@
  * \author Rasmus Pettersson Vik
  * \date juni 2013
  */
-class Board : public Printable
+class Board : public Printable, public Serializable
 {
 	public:
 		//! Different types of boards
@@ -55,7 +56,7 @@ class Board : public Printable
 		 * \brief Board assignment operator
 		 * \param[in] rhs Source to copy from
 		 */
-		Board& Board::operator=(const Board& rhs);
+		Board& operator=(const Board& rhs);
 
 		/*!
 		 * \brief Returns a pointer to the tile at position pos
@@ -110,6 +111,16 @@ class Board : public Printable
 
 		//! Returns the boards size.
 		const int& size() const;
+
+		/*!
+		 * \brief Serialize the object to JSON
+		 */
+		void serialize(Json::Value& root);
+
+		/*!
+		 * \brief Deserialize the object
+		 */
+		void deSerialize(Json::Value& root);
 
 	private:
 		//! Holds pointers to board tiles.
