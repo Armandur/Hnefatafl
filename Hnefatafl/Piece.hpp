@@ -55,6 +55,12 @@ class Piece : protected BoardEntity, protected Printable
 		~Piece(void);
 
 		/*!
+		 * \brief Piece assignment operator
+		 * \param[in] rhs Source to copy from
+		 */
+		Piece& operator=(const Piece& rhs);
+
+		/*!
 		 * \brief Sets the type of the piece
 		 * \param[in] type The type of the piece
 		 */

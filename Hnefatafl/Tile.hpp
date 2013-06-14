@@ -54,6 +54,12 @@ class Tile :  public BoardEntity, public Printable
 
 		//! Tile Destructor
 		~Tile();
+		
+		/*!
+		 * \brief Tile assignment operator
+		 * \param[in] rhs Source to copy from
+		 */
+		Tile& operator=(const Tile& rhs);
 
 		/*!
 		 * \brief Set the type of the tile

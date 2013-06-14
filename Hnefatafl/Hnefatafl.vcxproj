@@ -79,11 +79,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="BoardEntity.cpp" />
     <ClCompile Include="Piece.cpp" />
     <ClCompile Include="Tile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Board.hpp" />
     <ClInclude Include="BoardEntity.hpp" />
     <ClInclude Include="Piece.hpp" />
     <ClInclude Include="Printable.hpp" />

@@ -37,6 +37,14 @@ Piece::~Piece(void)
 
 }
 
+Piece& Piece::operator=(const Piece& rhs)
+{
+	this->position(rhs.position());
+	this->type(rhs.type());
+
+	return *this;
+}
+
 void Piece::type(constPiece::Type& type)
 {
 	this->_type = type;

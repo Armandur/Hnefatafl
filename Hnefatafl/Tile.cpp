@@ -39,6 +39,14 @@ Tile::~Tile(void)
 
 }
 
+Tile& Tile::operator=(const Tile& rhs)
+{
+	this->position(rhs.position());
+	this->type(rhs.type());
+
+	return *this;
+}
+
 void Tile::type(constTile::Type& type)
 {
 	this->_type = type;
