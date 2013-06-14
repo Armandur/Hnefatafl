@@ -12,7 +12,6 @@
 
 #include "Tile.hpp"
 
-
 Tile::Tile(void)
 {
 	_init();

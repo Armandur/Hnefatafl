@@ -9,10 +9,15 @@
 
 #include <string>
 #include <vector>
+#include <list>
+
+#include <SFML/System.hpp>
 
 #include "Printable.hpp"
-#include "Tile.hpp"
 #include "Serializable.hpp"
+
+class Tile;
+class Piece;
 
 /*!
  * \class Board
@@ -25,21 +30,13 @@
 class Board : public Printable, public Serializable
 {
 	public:
-		//! Different types of boards
-		enum Type{HNEFATAFL, ALEA, TABLUT};
-
-		/*!
-		 * \brief Default Board constructor
-		 *
-		 * Initialises board object with type of Board::Type::HNEFATAFL and
-		 * adds tiles to the tiles vector. Board will be 11x11. Loads
-		 * starting positions from startingPos/hnefatafl.txt and adds 
-		 * pieces.
+		/*! Different types of boards
+		 *	ARD, BRANDUB = 7x7;
+		 *	TABLUT = 9x9;
+		 *	TAWLBYUND, HNEFATAFL = 11x11;
+		 *	ALEA = 19x19
 		 */
-		Board(void);
-
-		//! Copy Board constructor
-		Board(const Board& src);
+		enum Type{ARD, BRANDUB, TABLUT, TAWLBYUND, HNEFATAFL, ALEA};
 
 		/*!
 		 * \brief Board constructor with setting of boardtype
@@ -48,6 +45,9 @@ class Board : public Printable, public Serializable
 		 * corresponding starting positions and adds tiles and pieces.
 		 */
 		Board(const Board::Type type = Board::Type::HNEFATAFL);
+
+		//! Copy Board constructor
+		Board(const Board& src);
 
 		//! Board destructor
 		~Board(void);
@@ -66,6 +66,15 @@ class Board : public Printable, public Serializable
 		 * nullptr.
 		 */
 		Tile* getTile(sf::Vector2<int> pos);
+
+		/*!
+		 * \brief Returns a pointer to a piece at position pos
+		 * \param[in] pos Position to a tile on board.
+		 * \return Returns a pointer to a piece at the position. If pos
+		 * is out of bounds or if there's no piece at the position it returns
+		 * nullptr.
+		 */
+		Piece* Board::getPiece(sf::Vector2<int> pos);
 		
 		//! Resets the board according to Board::Type _type.
 		void resetBoard();
@@ -73,22 +82,28 @@ class Board : public Printable, public Serializable
 		/*!
 		 * \brief Loads piece positions based on current type.
 		 */
-		void loadBoard();
+		void loadBoardLayout();
 
 		/*!
-		 * \brief Loads piece positions from file path
+		 * \brief Loads board layout from file path
 		 *
-		 * \param[in] path File to load positions from.
+		 * \param[in] path File to load layout from.
 		 */
-		void loadBoard(const std::string& path);
-
+		void loadBoardLayout(const std::string& path);
 
 		/*!
-		 * \brief Saves piece positions to file path
+		 * \brief Loads pieces and positions from file path
+		 *
+		 * \param[in] path File to load pieces from.
+		 */
+		void loadPieces(const std::string& path);
+		
+		/*!
+		 * \brief Saves current board positions to file path
 		 *
 		 * \param[in] path File to save positions to.
 		 */
-		void saveBoard(const std::string& path);
+		void saveCurrentBoard(const std::string& path);
 
 		/*!
 		 * \brief Sets the type of the board
@@ -125,6 +140,9 @@ class Board : public Printable, public Serializable
 	private:
 		//! Holds pointers to board tiles.
 		std::vector<std::vector<Tile*>> tiles;
+
+		//! Holds pointers to pieces on the board
+		std::list<Piece*> pieces;
 
 		//! Holds the boards current type.
 		Board::Type _type;
